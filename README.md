@@ -1,39 +1,140 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ***Rock, Paper, Scissors, Liazard, Spock***
 
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ---
 
-Happy coding!
+## ***Contents***
+
+- [***Rock, Paper, Scissors, Liazard, Spock***](#rock-paper-scissors-liazard-spock)
+  - [***Contents***](#contents)
+  - [***User Experience*** (UX)](#user-experience-ux)
+  - [**User Aims**](#user-aims)
+    - [*Visitor Goals*](#visitor-goals)
+    - [*First Time Visitor Goals*](#first-time-visitor-goals)
+    - [*Returning Visitor Goals*](#returning-visitor-goals)
+  - [***User Experience Design (UXD)***](#user-experience-design-uxd)
+    - [*Colour Scheme*](#colour-scheme)
+    - [*Typography*](#typography)
+    - [*Image Sourcing*](#image-sourcing)
+  - [***Features***](#features)
+    - [*General Features*](#general-features)
+  - [***Accessibility***](#accessibility)
+  - [***Technologies Used***](#technologies-used)
+    - [*Languages Used*](#languages-used)
+    - [*Frameworks, Libraries \& Programs Used*](#frameworks-libraries--programs-used)
+  - [***Deployment***](#deployment)
+    - [*Deployment*](#deployment-1)
+    - [*Local Development*](#local-development)
+    - [*How to Fork*](#how-to-fork)
+    - [*How to Clone*](#how-to-clone)
+  - [***Testing***](#testing)
+  - [***Credits***](#credits)
+    - [*Content*](#content)
+    - [*Media*](#media)
+
+---
+
+## ***User Experience*** (UX)
+
+
+## **User Aims**
+
+### *Visitor Goals*
+
+
+
+### *First Time Visitor Goals*
+
+.
+
+### *Returning Visitor Goals*
+
+
+
+---
+
+## ***User Experience Design (UXD)***
+
+
+
+### *Colour Scheme*
+
+
+### *Typography*
+
+
+### *Image Sourcing*
+
+
+---
+
+## ***Features***
+
+### *General Features*
+
+
+---
+
+## ***Accessibility***
+
+---
+
+## ***Technologies Used***
+
+### *Languages Used*
+
+HTML, CSS and Javascript were used to create this website.
+
+### *Frameworks, Libraries & Programs Used*
+
+
+---
+
+## ***Deployment***
+
+### *Deployment*
+
+Github Pages were used to deploy the live website. The instructions to achieve this are:
+
+ - Log in (or sign up) to Github.
+ - Find the repository for this project, LychParlour-photography. 
+ - Click on the Settings link. 
+ - Click on the Pages link in the navigation bar on the left. 
+ - In the Source section, choose main from the drop down select branch menu. 
+ - Select Root from the drop down select folder menu. 
+ - Click Save. 
+ - Your live Github Pages site is now deployed at the URL shown.
+
+With each new commit and git push the deployed site will update.
+
+### *Local Development*
+The local development section gives instructions on how someone else could make a copy of your project to use on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+
+### *How to Fork*
+To fork the LychParlour-photography repository:
+- Log in (or sign up) to Github. 
+- Go to the repository for this project, TommySpecs/LychParlour-photography. 
+- Click the Fork button in the top right corner.
+
+### *How to Clone*
+To clone the LychParlour-photography repository: Starts the same way of how to fork the repository. 
+- Log in (or sign up) to Github. 
+- Go to the repository for this project, TommySpecs/LychParlour-photography. 
+- Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal and then paste the link that was copied. 
+- Press enter.
+
+---
+
+## ***Testing***
+
+[testing]()
+
+---
+
+## ***Credits***
+
+### *Content*
+
+### *Media*
