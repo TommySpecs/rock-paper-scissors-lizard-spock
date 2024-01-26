@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Link to Stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--title-->
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-</head>
-<body>
-    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
+  </head>
+  <body>
+    <!--Game Title-->
+    <img src="assets/images/Favicon original.png" alt="rock,paper,scissors,lizard,spock rules"><h1>Rock - Paper - Scissors - Lizard - Spock</h1>
 
-    <div id="computerDisplay">place holder</div>
-
-    <div class="choices">
-        <button><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button><i class="fa-regular fa-hand"></i></button>
-        <button><i class="fa-regular fa-hand-scissors"></i></button>
-        <button><i class="fa-regular fa-hand-lizard"></i></button>
-        <button><i class="fa-regular fa-hand-spock"></i></button>
-
+    <button class="open">Rules</button>
+    <div style="display: none;" class="pop-outer">
+        <div class="pop-inner">
+            <button class="close">X</button>
+            <h2>rules/h2>
+            <p>Scissors cuts paper.
+            Paper covers rock.
+            Rock crushes lizard.
+            Lizard poisons Spock.
+            Spock smashes scissors.
+            Scissors decapitates lizard.
+            Lizard eats paper.
+            Paper disproves Spock.
+            Spock vaporizes rock.
+            Rock crushes scissors.</p>
+        </div>
     </div>
-    
-    
 
+    <!--display area (area where reaction image appears)-->
 
-    
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/c814d3896b.js" crossorigin="anonymous"></script>
+    <div id="computerDisplay"></div>
+
+<!--buttons for the player-->
+    <div id="choices">
+      <button><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button><i class="fa-regular fa-hand"></i></button>
+      <button><i class="fa-regular fa-hand-scissors"></i></button>
+      <button><i class="fa-regular fa-hand-lizard"></i></button>
+      <button><i class="fa-regular fa-hand-spock"></i></button>
+    </div>
+
+    <!--scorboards area-->
+    <div id="scoreBoard">
+      <div id="score"></div>
+      <div id="lives"></div>
+      <div id="timer"></div>
+    </div>
+
+     <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/c814d3896b.js"
+      crossorigin="anonymous"
+    ></script>
     <!--link to Javascript-->
     <script src="assets/js/script.js"></script>
-    </body>
+  </body>
 </html>
