@@ -14,28 +14,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
   </head>
   <body>
+   <!--Home Screen-->
+   <!-- Tilte-->
+   <!--Easy: Rock, Paper, Scissors-->
+   <!--Hard: rock, paper,scissors, lizard, spock-->
+   <!--Rules-->
+   <!--Settings, number of rounds?-->
+  
     <!--Game Title-->
-    <img src="assets/images/Favicon original.png" alt="rock,paper,scissors,lizard,spock rules"><h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
 
     <!--display area (area where reaction image appears)-->
 
-    <div id="computerDisplay"></div>
-
-<!--buttons for the player-->
+    <!--buttons for the player-->
     <div id="choices">
-      <button><i class="fa-regular fa-hand-back-fist"></i></button>
-      <button><i class="fa-regular fa-hand"></i></button>
-      <button><i class="fa-regular fa-hand-scissors"></i></button>
-      <button><i class="fa-regular fa-hand-lizard"></i></button>
-      <button><i class="fa-regular fa-hand-spock"></i></button>
+      <button onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button onclick="playGame('paper')"><i class="fa-regular fa-hand"></i></button>
+      <button onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
+      <button onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
+      <button onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i></button>
     </div>
 
-    <!--scorboards area-->
-    <div id="scoreBoard">
-      <div id="score"></div>
-      <div id="lives"></div>
-      <div id="timer"></div>
-    </div>
+    <div id="playerDisplay">Player:</div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay"></div>
+
+   
 
      <!--Font Awesome-->
     <script
