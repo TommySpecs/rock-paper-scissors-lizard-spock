@@ -22,24 +22,54 @@
    <!--Settings, number of rounds?-->
   
     <!--Game Title-->
-    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+    <section class="title-block">
+        <ul>
+            <li>Rock</li>
+            <li>Paper</li>
+            <li>Scissors</li>
+            <li>Lizard</li>
+            <li>Spock</li>
+        </ul>
+        <div class="score">
+            <div class="score-title">Score</div>
+            <div class="score-count"></div>
+        </div>
+    </section>
 
-    <!--display area (area where reaction image appears)-->
+    <!--User Choices-->
+<section class="user-choice"></section>
+<div class="game-card rock"><i class="fa-regular fa-hand-back-fist"></i></div>
+<div class="game-card paper"><i class="fa-regular fa-hand"></i></div>
+<div class="game-card scissors"><i class="fa-regular fa-hand-scissors"></i></div>
+<div class="game-card lizard"><i class="fa-regular fa-hand-lizard"></i></div>
+<div class="game-card spock"><i class="fa-regular fa-hand-spock"></i></div>
 
-    <!--buttons for the player-->
-    <div id="choices">
-      <button onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
-      <button onclick="playGame('paper')"><i class="fa-regular fa-hand"></i></button>
-      <button onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
-      <button onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
-      <button onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i></button>
+<div class="section picked hidden">
+    <div class="choice">
+        <p>You Picked</p>
+        <div class="user-pick"></div>
     </div>
+    <div class="result hidden">
+        <div class="title">You Lose</div>
+        <button>Play Again?</button>
+    </div>
+    <div class="choice">
+        <p>The House Picked</p>
+        <div class="computer-picked"></div>
+    </div>    
+</div>
 
-    <div id="playerDisplay">Player:</div>
-    <div id="computerDisplay">Computer:</div>
-    <div id="resultDisplay"></div>
+<button class="rules-btn">Rules</button>
+<div class="modal-bg"></div>
+<div class="modal"></div>
+<span class="close">X</span>
+<title>Rules</title>
+<div class="content">
+    <img src="assets/images/Favicon original.png" alt="Image of rules">
+</div>
 
-   
+
+
 
      <!--Font Awesome-->
     <script

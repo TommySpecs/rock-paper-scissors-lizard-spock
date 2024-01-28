@@ -31,19 +31,19 @@ function playGame(playerChoice){
     else{
         switch(playerChoice){
             case "rock": 
-                result = (computerChoice === "scissors" or "lizard") ? "You Win" : "You Lose";
+                result = (computerChoice === "scissors","lizard") ? "You Win" : "You Lose";
                 break;
             case "paper":
-                result = (computerChoice === "rock" or "spock") ? "You Win" : "You Lose";
+                result = (computerChoice === "rock","spock") ? "You Win" : "You Lose";
                 break;
             case "scissors":
-                result = (computerChoice === "paper" or "lizard") ? "You Win" : "You Lose";
+                result = (computerChoice === "paper","lizard") ? "You Win" : "You Lose";
                 break;
             case "lizard":
-                result = (computerChoice === "paper" or"spock") ? "You Win" : "You Lose";
+                result = (computerChoice === "paper","spock") ? "You Win" : "You Lose";
                 break;
             case "spock":
-                result = (computerChoice === "scissors" or "rock") ? "You Win" : "You Lose";
+                result = (computerChoice === "scissors","rock") ? "You Win" : "You Lose";
                 break;
         }
     }
