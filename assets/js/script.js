@@ -15,41 +15,29 @@
 //Spock beats Scissors, Rock
 //loses Paper, Lizard
 
-const choices= ["rock", "paper", "scissors", "lizard", "spock"];
-const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById("computerDisplay");
-const resultDisplay = document.getElementById("resultDisplay");
+//Modal Section//
+// Get the modal
+var modal = document.getElementById("rulesModal");
 
-function playGame(playerChoice){
+// Get the button that opens the modal
+var btn = document.getElementById("rules-btn");
 
-    const computerChoice = choices[Math.floor(Math.random()*5)]; 
-    let result ="";
-    
-    if (playerChoice === computerChoice){
-        result="It's a tie";
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-    else{
-        switch(playerChoice){
-            case "rock": 
-                result = (computerChoice === "scissors","lizard") ? "You Win" : "You Lose";
-                break;
-            case "paper":
-                result = (computerChoice === "rock","spock") ? "You Win" : "You Lose";
-                break;
-            case "scissors":
-                result = (computerChoice === "paper","lizard") ? "You Win" : "You Lose";
-                break;
-            case "lizard":
-                result = (computerChoice === "paper","spock") ? "You Win" : "You Lose";
-                break;
-            case "spock":
-                result = (computerChoice === "scissors","rock") ? "You Win" : "You Lose";
-                break;
-        }
-    }
-
-    playerDisplay. textContent = `PLAYER: ${playerChoice}`;
-    computerDisplay.textContent = `Computer: ${computerChoice}`;
-    resultDisplay. textContent = result;
-}
-
+};

@@ -9,69 +9,83 @@
     <!--title-->
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
   </head>
   <body>
-   <!--Home Screen-->
-   <!-- Tilte-->
-   <!--Easy: Rock, Paper, Scissors-->
-   <!--Hard: rock, paper,scissors, lizard, spock-->
-   <!--Rules-->
-   <!--Settings, number of rounds?-->
-  
+    <!--Home Screen-->
+    <!-- Title--> <!--robot fight?-->
+    <!--Easy: Rock, Paper, Scissors-->
+    <!--Hard: rock, paper,scissors, lizard, spock-->
+    <!--Rules-->
+    <!--Settings, number of rounds?-->
+
     <!--Game Title-->
     <section class="title-block">
-        <ul>
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissors</li>
-            <li>Lizard</li>
-            <li>Spock</li>
-        </ul>
-        <div class="score">
-            <div class="score-title">Score</div>
-            <div class="score-count"></div>
-        </div>
+      <ul>
+        <li>Rock</li>
+        <li>Paper</li>
+        <li>Scissors</li>
+        <li>Lizard</li>
+        <li>Spock</li>      
     </section>
 
     <!--User Choices-->
-<section class="user-choice"></section>
-<div class="game-card rock"><i class="fa-regular fa-hand-back-fist"></i></div>
-<div class="game-card paper"><i class="fa-regular fa-hand"></i></div>
-<div class="game-card scissors"><i class="fa-regular fa-hand-scissors"></i></div>
-<div class="game-card lizard"><i class="fa-regular fa-hand-lizard"></i></div>
-<div class="game-card spock"><i class="fa-regular fa-hand-spock"></i></div>
-
-<div class="section picked hidden">
-    <div class="choice">
-        <p>You Picked</p>
-        <div class="user-pick"></div>
+    <section class="user-choice"></section>
+    <div class="game-card rock">
+      <i class="fa-regular fa-hand-back-fist"></i>
     </div>
-    <div class="result hidden">
-        <div class="title">You Lose</div>
-        <button>Play Again?</button>
+    <div class="game-card paper"><i class="fa-regular fa-hand"></i></div>
+    <div class="game-card scissors">
+      <i class="fa-regular fa-hand-scissors"></i>
     </div>
-    <div class="choice">
-        <p>The House Picked</p>
-        <div class="computer-picked"></div>
-    </div>    
-</div>
+    <div class="game-card lizard">
+      <i class="fa-regular fa-hand-lizard"></i>
+    </div>
+    <div class="game-card spock"><i class="fa-regular fa-hand-spock"></i></div>
 
-<button class="rules-btn">Rules</button>
-<div class="modal-bg"></div>
-<div class="modal"></div>
-<span class="close">X</span>
-<title>Rules</title>
-<div class="content">
-    <img src="assets/images/Favicon original.png" alt="Image of rules">
-</div>
+    <!--Rules Modal-->
+    <!--trigger to open the modal-->
+    <button class="rules-btn">Rules</button>
 
+    <!--The modal-->
+    <div id="rulesModal" class="modal">
 
+        <!--Modal Content-->
+      <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    
+      <div class="content">
+        <div class="title">Rules</div>
+        <img src="assets/images/Favicon original.png" alt="Image of rules" />
+        <p>Scissors cuts Paper
+        Paper covers Rock
+        Rock crushes Lizard
+        Lizard poisons Spock
+        Spock smashes Scissors
+        Scissors decapitates Lizard
+        Lizard eats Paper
+        Paper disproves Spock
+        Spock vaporizes Rock
+        Rock crushes Scissors</p>
+      </div>
+    </div>
 
-
-     <!--Font Awesome-->
+    <!--Font Awesome-->
     <script
       src="https://kit.fontawesome.com/c814d3896b.js"
       crossorigin="anonymous"
