@@ -38,15 +38,17 @@
     <br>
 <!--Player Choice-->
     <div class="circle-container">
-    <button class="circle-button" onclick="playGame('rock')">Rock</button>
-    <button class="circle-button" onclick="playGame('paper')">Paper</button>
-    <button class="circle-button" onclick="playGame('scissors')">Scissors</button>
-    <button class="circle-button" onclick="playGame('lizard')">Lizard</button>
-    <button class="circle-button" onclick="playGame('spock')">Spock</button>
+    <button class="circle-button" onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+    <button class="circle-button" onclick="playGame('paper')"><i class="fa-regular fa-hand"></i></button>
+    <button class="circle-button" onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
+    <button class="circle-button" onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
+    <button class="circle-button" onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i></button>
     </div>
-    
+
 <!--results-->
-    <div id="result"></div>
+    <div id="result">
+        <div class="lives"></div>
+    </div>
 
     <!-- Rules Modal -->
     <div id="rulesModal" class="modal">
