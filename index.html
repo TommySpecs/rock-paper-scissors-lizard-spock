@@ -27,63 +27,21 @@
       href="assets/favicon/favicon-16x16.png"
     />
   </head>
-  <body>
-    <!--Home Screen-->
-    <!-- Title--> <!--robot fight?-->
-    <!--Easy: Rock, Paper, Scissors-->
-    <!--Hard: rock, paper,scissors, lizard, spock-->
-    <!--Rules-->
-    <!--Settings, number of rounds?-->
+</head>
 
-    <!--Game Title-->
-    <section class="title-block">
-      <ul>
-        <li>Rock</li>
-        <li>Paper</li>
-        <li>Scissors</li>
-        <li>Lizard</li>
-        <li>Spock</li>      
-    </section>
+<body>
 
-    <!--User Choices-->
-    <section class="user-choice"></section>
-    <div class="game-card rock">
-      <i class="fa-regular fa-hand-back-fist"></i>
-    </div>
-    <div class="game-card paper"><i class="fa-regular fa-hand"></i></div>
-    <div class="game-card scissors">
-      <i class="fa-regular fa-hand-scissors"></i>
-    </div>
-    <div class="game-card lizard">
-      <i class="fa-regular fa-hand-lizard"></i>
-    </div>
-    <div class="game-card spock"><i class="fa-regular fa-hand-spock"></i></div>
+    <h1>Rock Paper Scissors Lizard Spock</h1>
 
-    <!--Rules Modal-->
-    <!--trigger to open the modal-->
-    <button class="rules-btn">Rules</button>
+    <p>Click on one of the buttons below to make your choice:</p>
 
-    <!--The modal-->
-    <div id="rulesModal" class="modal">
+    <button onclick="playGame('rock')">Rock</button>
+    <button onclick="playGame('paper')">Paper</button>
+    <button onclick="playGame('scissors')">Scissors</button>
+    <button onclick="playGame('lizard')">Lizard</button>
+    <button onclick="playGame('spock')">Spock</button>
 
-        <!--Modal Content-->
-      <span class="close"><i class="fa-solid fa-xmark"></i></span>
-    
-      <div class="content">
-        <div class="title">Rules</div>
-        <img src="assets/images/Favicon original.png" alt="Image of rules" />
-        <p>Scissors cuts Paper
-        Paper covers Rock
-        Rock crushes Lizard
-        Lizard poisons Spock
-        Spock smashes Scissors
-        Scissors decapitates Lizard
-        Lizard eats Paper
-        Paper disproves Spock
-        Spock vaporizes Rock
-        Rock crushes Scissors</p>
-      </div>
-    </div>
+    <div id="result"></div>
 
     <!--Font Awesome-->
     <script
