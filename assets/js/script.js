@@ -20,3 +20,19 @@ function playGame(playerChoice) {
 
     document.getElementById('result').innerHTML = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
 }
+// Modal functions
+function openModal() {
+    document.getElementById('rulesModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('rulesModal').style.display = 'none';
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function (event) {
+    var modal = document.getElementById('rulesModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
