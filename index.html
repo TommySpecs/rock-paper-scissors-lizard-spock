@@ -38,21 +38,26 @@
     <br>
 <!--Player Choice-->
     <div class="circle-container">
-    <button class="circle-button" onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
-    <button class="circle-button" onclick="playGame('paper')"><i class="fa-regular fa-hand"></i></button>
-    <button class="circle-button" onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
-    <button class="circle-button" onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
-    <button class="circle-button" onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i></button>
+    <button class="circle-button" onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i>Rock</button>
+    <button class="circle-button" onclick="playGame('paper')"><i class="fa-regular fa-hand"></i>Paper</button>
+    <button class="circle-button" onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i>Scissors</button>
+    <button class="circle-button" onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
+    <button class="circle-button" onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i>Spock</button>
     </div>
 
 <!--results-->
-    <div id="result">
-        <div class="lives"></div>
+    <div id="resultModal" class="resultModal">
+        <div class="resultModal-content">
+            <h2>Results</h2>
+            <div id="result"></div>
+             <button onclick="closeResultModal()">Continue?</button>
+             <button>Back to Menu</button>
+        </div>
     </div>
 
     <!-- Rules Modal -->
-    <div id="rulesModal" class="modal">
-        <div class="modal-content">
+    <div id="rulesModal" class="rulesModal">
+        <div class="rulesModal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Rules</h2>
             <img src="assets/images/Favicon original.png" alt="Image of rules" />
@@ -73,7 +78,7 @@
     </div>
     
     <!-- Button to open the rules modal -->
-    <button onclick="openModal()">Rules</button>
+    <button onclick="openRulesModal()">Rules</button>
 
     <!--Font Awesome-->
     <script

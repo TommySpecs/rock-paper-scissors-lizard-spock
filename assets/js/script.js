@@ -1,10 +1,8 @@
-let life = 0;
-
 function playGame(playerChoice) {
-    var choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-    var computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-    var result = '';
+    let result = '';
 
     if (playerChoice === computerChoice) {
         result = 'It\'s a tie!';
@@ -19,19 +17,55 @@ function playGame(playerChoice) {
     } else {
         result = 'You lose!';
     }
-
-    document.getElementById('result').innerHTML = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+   
+    openResultModal(playerChoice, computerChoice, result);
 }
 
-function loseLife() {
-    life = life -1;
-    if (life <1 ) {
-        result = `You lose try again? return to menu`;
-} 
+// Result Modal 
+function openResultModal(playerChoice, computerChoice, result) {
+    //playerchoice
+    if (playerChoice === 'rock') {
+        playerChoice = '<i class="fa-regular fa-hand-back-fist"></i>'
+    };
+    if (playerChoice === 'paper') {
+        playerChoice = '<i class="fa-regular fa-hand"></i>'
+    };
+    if (playerChoice === 'scissors') {
+        playerChoice = '<i class="fa-regular fa-hand-scissors"></i>'
+    };
+    if (playerChoice === 'lizard') {
+        playerChoice = '<i class="fa-regular fa-hand-lizard"></i>'
+    };
+    if (playerChoice === 'spock') {
+        playerChoice = '<i class="fa-regular fa-hand-spock"></i>'
+    };
 
+    //computer choice
+    if (computerChoice === 'rock') {
+        computerChoice = '<i class="fa-regular fa-hand-back-fist"></i>'
+    };
+    if (computerChoice === 'paper') {
+        computerChoice = '<i class="fa-regular fa-hand"></i>'
+    };
+    if (computerChoice === 'scissors') {
+        computerChoice = '<i class="fa-regular fa-hand-scissors"></i>'
+    };
+    if (computerChoice === 'lizard') {
+        computerChoice = '<i class="fa-regular fa-hand-lizard"></i>'
+    };
+    if (computerChoice === 'spock') {
+        computerChoice = '<i class="fa-regular fa-hand-spock"></i>'
+    };
 
-// Modal functions
-function openModal() {
+    document.getElementById('resultModal').style.display = 'block';
+    document.getElementById('result').innerHTML = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+}
+function closeResultModal() {
+    document.getElementById('resultModal').style.display = 'none';
+}
+
+// Rules Modal 
+function openRulesModal() {
     document.getElementById('rulesModal').style.display = 'block';
 }
 
@@ -39,9 +73,8 @@ function closeModal() {
     document.getElementById('rulesModal').style.display = 'none';
 }
 
-// Close the modal if the user clicks outside of it
 window.onclick = function (event) {
-    var modal = document.getElementById('rulesModal');
+    let modal = document.getElementById('rulesModal');
     if (event.target == modal) {
         modal.style.display = 'none';
     }
