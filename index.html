@@ -30,7 +30,30 @@
 </head>
 
 <body>
-<!--Title-->
+<!--Menu Modal-->
+<div id="menuModal" class="menuModal">
+    <div class="menuModal-content">        
+        <h2>Menu</h2>
+        <button onclick="closeModal() playGameEasy()">Easy</button>
+        <button onclick="closeModal() playGameHard()">Hard</button>
+        <button onclick="openRulesModal()">Rules</button>
+        <button onclick="openRoundsModal()">Settings</button>
+    </div>
+</div>
+
+<!--Rounds Modal-->
+<div id="roundsModal" class="roundsModal">
+    <div class="roundssModal-content"> 
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>number of Rounds</h2>
+        <radio>1</radio>
+        <radio>3</radio>
+        <radio>5</radio>
+        <radio>10</radio>
+    </div>
+</div>
+
+    <!--Title-->
     <h1>Rock Paper Scissors Lizard Spock</h1>
 
     <p>Click on one of the buttons below to make your choice:</p>
@@ -51,7 +74,7 @@
             <h2>Results</h2>
             <div id="result"></div>
              <button onclick="closeResultModal()">Continue?</button>
-             <button>Back to Menu</button>
+             <button onclick="closeResultModal() openMenuModal()">Back to Menu</button>
         </div>
     </div>
 
