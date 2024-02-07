@@ -1,3 +1,58 @@
+//game starts on menu
+//-easymode (rock paper scissors)
+//-hardmode (rock, paper, scissors, lizard, spock)
+//rules
+//rounds
+
+/**easymode selected- menu closes, game begins with only rock paper scissors,
+ computer can only pick rock paper or scissors, results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
+ Game over screen once lives are depleted (either win or lose) offer return to menu
+
+**hardmode selected- menu closes, game begins with rock paper scissors lizard spock,
+  results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
+ Game over screen once lives are depleted (either win or lose) offer return to menu
+
+rules-the rules for the game
+
+rounds- how many lives are selected**/
+
+//Menu Modal
+//start easy mode
+function startGameEasy(){
+
+}
+//start hard mode
+function startGameHard() {
+
+}
+
+// Rules Modal 
+function openRulesModal() {
+    document.getElementById('rulesModal').style.display = 'block';
+}
+
+function closeRulesModal() {
+    document.getElementById('rulesModal').style.display = 'none';
+}
+
+window.onclick = function (event) {
+    let modal = document.getElementById('rulesModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+
+//rounds
+function openRoundsModal() {
+    document.getElementById('roundsModal').style.display =  'block';   
+}
+function closeRoundsModal() {
+    document.getElementById('roundsModal').style.display = 'none';
+}
+//add lives function
+
+
+
 function playGame(playerChoice) {
     let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -63,19 +118,3 @@ function openResultModal(playerChoice, computerChoice, result) {
 function closeResultModal() {
     document.getElementById('resultModal').style.display = 'none';
 }
-
-// Rules Modal 
-function openRulesModal() {
-    document.getElementById('rulesModal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('rulesModal').style.display = 'none';
-}
-
-window.onclick = function (event) {
-    let modal = document.getElementById('rulesModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-};

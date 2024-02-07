@@ -9,11 +9,7 @@
     <!--title-->
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <!--favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
@@ -27,32 +23,32 @@
       href="assets/favicon/favicon-16x16.png"
     />
   </head>
-</head>
 
 <body>
 <!--Menu Modal-->
 <div id="menuModal" class="menuModal">
     <div class="menuModal-content">        
         <h2>Menu</h2>
-        <button onclick="closeModal() playGameEasy()">Easy</button>
-        <button onclick="closeModal() playGameHard()">Hard</button>
+        <button onclick="startGameEasy(); closeModal()">Easy</button>
+        <button onclick="startGameHard(); closeModal()">Hard</button>
         <button onclick="openRulesModal()">Rules</button>
-        <button onclick="openRoundsModal()">Settings</button>
+        <button id="roundsModal" onclick="openRoundsModal()">Rounds</button>
     </div>
 </div>
 
 <!--Rounds Modal-->
 <div id="roundsModal" class="roundsModal">
     <div class="roundssModal-content"> 
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeRoundsModal()">X</span>
         <h2>number of Rounds</h2>
-        <radio>1</radio>
-        <radio>3</radio>
-        <radio>5</radio>
-        <radio>10</radio>
+        <button>1</button>
+        <button>3</button>
+        <button>5</button>
+       <button>10</button>
     </div>
 </div>
 
+<!--MAIN GAME-->
     <!--Title-->
     <h1>Rock Paper Scissors Lizard Spock</h1>
 
@@ -64,8 +60,8 @@
     <button class="circle-button" onclick="playGame('rock')"><i class="fa-regular fa-hand-back-fist"></i>Rock</button>
     <button class="circle-button" onclick="playGame('paper')"><i class="fa-regular fa-hand"></i>Paper</button>
     <button class="circle-button" onclick="playGame('scissors')"><i class="fa-regular fa-hand-scissors"></i>Scissors</button>
-    <button class="circle-button" onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
-    <button class="circle-button" onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i>Spock</button>
+    <button id="hardModeOnly" class="circle-button" onclick="playGame('lizard')"><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
+    <button id="hardModeOnly" class="circle-button" onclick="playGame('spock')"><i class="fa-regular fa-hand-spock"></i>Spock</button>
     </div>
 
 <!--results-->
@@ -74,14 +70,14 @@
             <h2>Results</h2>
             <div id="result"></div>
              <button onclick="closeResultModal()">Continue?</button>
-             <button onclick="closeResultModal() openMenuModal()">Back to Menu</button>
+             <button onclick="openMenuModal(); closeResultModal()">Back to Menu</button>
         </div>
     </div>
 
     <!-- Rules Modal -->
     <div id="rulesModal" class="rulesModal">
         <div class="rulesModal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" onclick="closeRulesModal()">X</span>
             <h2>Rules</h2>
             <img src="assets/images/Favicon original.png" alt="Image of rules" />
             <p><ul>
