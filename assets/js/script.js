@@ -8,13 +8,23 @@
  computer can only pick rock paper or scissors, results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
  Game over screen once lives are depleted (either win or lose) offer return to menu
 
-**hardmode selected- menu closes, game begins with rock paper scissors lizard spock,
-  results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
- Game over screen once lives are depleted (either win or lose) offer return to menu
+hardmode selected- menu closes, game begins with rock paper scissors lizard spock,
+results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
+Game over screen once lives are depleted (either win or lose) offer return to menu
 
 rules-the rules for the game
 
 rounds- how many lives are selected**/
+
+let difficulty = '';
+
+let icons = {
+    "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
+    "paper": "<i class=\"fa-regular fa-hand\"></i>",
+    "scissors":"< i class=\"fa-regular fa-hand-scissors\" ></i >",
+    "lizard": "<i class=\"fa-regular fa-hand-lizard\"></i>",
+    "spock": "<i class=\"fa-regular fa-hand-spock\"></i>"
+}
 
 //Menu Modal
 //start easy mode
@@ -49,14 +59,20 @@ function openRoundsModal() {
 function closeRoundsModal() {
     document.getElementById('roundsModal').style.display = 'none';
 }
-//add lives function
 
+let btns= document.querySelectorAll(".circle-button");
+
+btns.forEach(btn=>{
+    btn.addEventListener("click", function(e) {
+        playGame(this.value);
+    });
+});
 
 
 function playGame(playerChoice) {
     let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
+    
     let result = '';
 
     if (playerChoice === computerChoice) {
@@ -78,43 +94,10 @@ function playGame(playerChoice) {
 
 // Result Modal 
 function openResultModal(playerChoice, computerChoice, result) {
-    //playerchoice
-    if (playerChoice === 'rock') {
-        playerChoice = '<i class="fa-regular fa-hand-back-fist"></i>'
-    };
-    if (playerChoice === 'paper') {
-        playerChoice = '<i class="fa-regular fa-hand"></i>'
-    };
-    if (playerChoice === 'scissors') {
-        playerChoice = '<i class="fa-regular fa-hand-scissors"></i>'
-    };
-    if (playerChoice === 'lizard') {
-        playerChoice = '<i class="fa-regular fa-hand-lizard"></i>'
-    };
-    if (playerChoice === 'spock') {
-        playerChoice = '<i class="fa-regular fa-hand-spock"></i>'
-    };
-
-    //computer choice
-    if (computerChoice === 'rock') {
-        computerChoice = '<i class="fa-regular fa-hand-back-fist"></i>'
-    };
-    if (computerChoice === 'paper') {
-        computerChoice = '<i class="fa-regular fa-hand"></i>'
-    };
-    if (computerChoice === 'scissors') {
-        computerChoice = '<i class="fa-regular fa-hand-scissors"></i>'
-    };
-    if (computerChoice === 'lizard') {
-        computerChoice = '<i class="fa-regular fa-hand-lizard"></i>'
-    };
-    if (computerChoice === 'spock') {
-        computerChoice = '<i class="fa-regular fa-hand-spock"></i>'
-    };
-
     document.getElementById('resultModal').style.display = 'block';
-    document.getElementById('result').innerHTML = `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+    document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
 }
+
 function closeResultModal() {
     document.getElementById('resultModal').style.display = 'none';
 }
