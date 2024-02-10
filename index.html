@@ -29,23 +29,15 @@
 <div id="menuModal" class="menuModal">
     <div class="menuModal-content">        
         <h2>Menu</h2>
-        <button onclick="startGameEasy(); closeModal()">Easy</button>
-        <button onclick="startGameHard(); closeModal()">Hard</button>
-        <button onclick="openRulesModal()">Rules</button>
-        <button id="roundsModal" onclick="openRoundsModal()">Rounds</button>
+        <button class="easy" value="Easy">Easy</button>
+        <button class="hard" value="Hard">Hard</button>
+        <button class="rulesBtn" value="rules">Rules</button>
+        <button class="livesBtn" value="Lives">Lives</button>
     </div>
 </div>
 
-<!--Rounds Modal-->
-<div id="roundsModal" class="roundsModal">
-    <div class="roundssModal-content"> 
-        <span class="close" onclick="closeRoundsModal()">X</span>
-        <h2>number of Rounds</h2>
-        <button>1</button>
-        <button>3</button>
-        <button>5</button>       
-    </div>
-</div>
+<!--Lives Modal-->
+
 
 <!--MAIN GAME-->
     <!--Title-->
@@ -59,19 +51,11 @@
     <button class="circle-button" value='rock'><i class="fa-regular fa-hand-back-fist"></i>Rock</button>
     <button class="circle-button" value='paper'><i class="fa-regular fa-hand"></i>Paper</button>
     <button class="circle-button" value='scissors'><i class="fa-regular fa-hand-scissors"></i>Scissors</button>
-    <button class="circle-button" value='lizard'><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
-    <button class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i>Spock</button>
+    <button id="lizard" class="circle-button" value='lizard'><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
+    <button id="spock" class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i>Spock</button>
     </div>
 
-<!--results-->
-    <div id="resultModal" class="resultModal">
-        <div class="resultModal-content">
-            <h2>Results</h2>
-            <div id="result"></div>
-             <button onclick="closeResultModal()">Continue?</button>
-             <button onclick="openMenuModal(); closeResultModal()">Back to Menu</button>
-        </div>
-    </div>
+    <span id="result"></span>
 
     <!-- Rules Modal -->
     <div id="rulesModal" class="rulesModal">
@@ -96,7 +80,12 @@
     </div>
     
     <!-- Button to open the rules modal -->
-    <button onclick="openRulesModal()">Rules</button>
+    <button class="rulesBtn" value="rules">Rules</button>
+
+    <button id="rtnBtn" class="rtnBtn" value="home">Back to Menu?</button>
+
+    <!--Make final result Modal-->
+
 
     <!--Font Awesome-->
     <script

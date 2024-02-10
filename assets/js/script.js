@@ -1,40 +1,34 @@
-//game starts on menu
-//-easymode (rock paper scissors)
-//-hardmode (rock, paper, scissors, lizard, spock)
-//rules
-//rounds
-
-/**easymode selected- menu closes, game begins with only rock paper scissors,
- computer can only pick rock paper or scissors, results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
- Game over screen once lives are depleted (either win or lose) offer return to menu
-
-hardmode selected- menu closes, game begins with rock paper scissors lizard spock,
-results, lose a life or computer lose a life offer continue or return to menu, next round depending on number of lives
-Game over screen once lives are depleted (either win or lose) offer return to menu
-
-rules-the rules for the game
-
-rounds- how many lives are selected**/
-
-let difficulty = '';
+let difficulty = 'Hard';
 
 let icons = {
     "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
     "paper": "<i class=\"fa-regular fa-hand\"></i>",
-    "scissors":"< i class=\"fa-regular fa-hand-scissors\" ></i >",
+    "scissors": "<i class=\"fa-regular fa-hand-scissors\" ></i >",
     "lizard": "<i class=\"fa-regular fa-hand-lizard\"></i>",
     "spock": "<i class=\"fa-regular fa-hand-spock\"></i>"
 }
 
 //Menu Modal
-//start easy mode
-function startGameEasy(){
+let closeMenuEasy= document.querySelectorAll(".easy")
+let closeMenuHard = document.querySelectorAll(".hard")
 
-}
-//start hard mode
-function startGameHard() {
+closeMenuEasy.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('menuModal').style.display = 'none';
+        difficulty= 'Easy';
+        document.getElementById('lizard').style.display = 'none';
+        document.getElementById('spock').style.display = 'none';
+    });
+});
 
-}
+closeMenuHard.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('menuModal').style.display = 'none';
+        difficulty= 'Hard' 
+        document.getElementById('lizard').style.display = 'block';
+        document.getElementById('spock').style.display = 'block';       
+    });
+});
 
 // Rules Modal 
 function openRulesModal() {
@@ -60,9 +54,9 @@ function closeRoundsModal() {
     document.getElementById('roundsModal').style.display = 'none';
 }
 
-let btns= document.querySelectorAll(".circle-button");
+let choiceBtns= document.querySelectorAll(".circle-button");
 
-btns.forEach(btn=>{
+choiceBtns.forEach(btn=>{
     btn.addEventListener("click", function(e) {
         playGame(this.value);
     });
@@ -70,9 +64,16 @@ btns.forEach(btn=>{
 
 
 function playGame(playerChoice) {
-    let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    let choices = [];
+
+    if(difficulty==='Easy') {
+     choices = ['rock', 'paper', 'scissors'];
+    }
+    else{
+     choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    }
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    
+       
     let result = '';
 
     if (playerChoice === computerChoice) {
@@ -88,16 +89,14 @@ function playGame(playerChoice) {
     } else {
         result = 'You lose!';
     }
-   
-    openResultModal(playerChoice, computerChoice, result);
+
+       document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
 }
 
-// Result Modal 
-function openResultModal(playerChoice, computerChoice, result) {
-    document.getElementById('resultModal').style.display = 'block';
-    document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
-}
+let openMenu = document.querySelectorAll(".rtnBtn");
 
-function closeResultModal() {
-    document.getElementById('resultModal').style.display = 'none';
-}
+openMenu.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('menuModal').style.display = 'block';
+    });
+});
