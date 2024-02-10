@@ -31,20 +31,20 @@ closeMenuHard.forEach(btn => {
 });
 
 // Rules Modal 
-function openRulesModal() {
-    document.getElementById('rulesModal').style.display = 'block';
-}
+let openRulesModal = document.querySelectorAll(".rulesBtn");
+let closRuleseModal = document.querySelectorAll(".close");
 
-function closeRulesModal() {
-    document.getElementById('rulesModal').style.display = 'none';
-}
+openRulesModal.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('rulesModal').style.display = 'block';       
+    });
+});
 
-window.onclick = function (event) {
-    let modal = document.getElementById('rulesModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-};
+closRuleseModal.forEach(span => {
+    span.addEventListener("click", function (e) {
+        document.getElementById('rulesModal').style.display = 'none';
+    });
+});
 
 //rounds
 function openRoundsModal() {
