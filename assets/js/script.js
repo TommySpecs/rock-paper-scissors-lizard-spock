@@ -1,4 +1,5 @@
 let difficulty = 'Hard';
+let lives = 0;
 
 let icons = {
     "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
@@ -6,7 +7,7 @@ let icons = {
     "scissors": "<i class=\"fa-regular fa-hand-scissors\" ></i >",
     "lizard": "<i class=\"fa-regular fa-hand-lizard\"></i>",
     "spock": "<i class=\"fa-regular fa-hand-spock\"></i>"
-}
+};
 
 //Menu Modal
 let closeMenuEasy= document.querySelectorAll(".easy")
@@ -46,14 +47,25 @@ closRuleseModal.forEach(span => {
     });
 });
 
-//rounds
-function openRoundsModal() {
-    document.getElementById('roundsModal').style.display =  'block';   
-}
-function closeRoundsModal() {
-    document.getElementById('roundsModal').style.display = 'none';
-}
+//lives
+let openLivesModal = document.querySelectorAll(".livesBtn");
+let closeLivesModal = document.querySelectorAll(".closeLives");
 
+openLivesModal.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('livesModal').style.display = 'block';
+    });
+});
+
+closeLivesModal.forEach(span => {
+    span.addEventListener("click", function (e) {
+        document.getElementById('livesModal').style.display = 'none';
+    });
+});
+
+lives = document.getElementById('lives').valueAsNumber;
+
+//play game
 let choiceBtns= document.querySelectorAll(".circle-button");
 
 choiceBtns.forEach(btn=>{

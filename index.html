@@ -32,12 +32,46 @@
         <button class="easy" value="Easy">Easy</button>
         <button class="hard" value="Hard">Hard</button>
         <button class="rulesBtn" value="rules">Rules</button>
-        <button class="livesBtn" value="Lives">Lives</button>
+        <button class="livesBtn" value="lives">lives</button>
     </div>
 </div>
 
-<!--Lives Modal-->
+<!-- Rules Modal -->
+<div id="rulesModal" class="rulesModal">
+    <div class="rulesModal-content">
+        <span class="close">X</span>
+        <h2>Rules</h2>
+        <img src="assets/images/Favicon original.png" alt="Image of rules" />
+        <p>
+        <ul>
+            <li>Scissors cuts Paper</li>
+            <li>Paper covers Rock</li>
+            <li> Rock crushes Lizard</li>
+            <li>Lizard poisons Spock</li>
+            <li> Spock smashes Scissors</li>
+            <li>Scissors decapitates Lizard</li>
+            <li>Lizard eats Paper</li>
+            <li>Paper disproves Spock</li>
+            <li>Spock vaporizes Rock</li>
+            <li>Rock crushes Scissors</li>
+        </ul>
+        </p>
 
+    </div>
+</div>
+
+<!--lives Modal-->
+<div id="livesModal" class="livesModal">
+    <div class="livesModal-content">
+        <span class="closeLives">X</span>
+        <div>
+            <h2>lives</h2>
+            <input type="range" id="lives" name="lives" min="1" max="5" step="2" />
+            <label for="lives">Lives</label>
+        <p>lives: <output id="lifeCount"></output></p>
+        </div>
+    </div>
+</div>
 
 <!--MAIN GAME-->
     <!--Title-->
@@ -55,31 +89,13 @@
     <button id="spock" class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i>Spock</button>
     </div>
 
-    <span id="result"></span>
+    <span id="result">
+        <p>Player: </p> 
+        <p>computer: </p>
+    </span>
+   
 
-    <!-- Rules Modal -->
-    <div id="rulesModal" class="rulesModal">
-        <div class="rulesModal-content">
-            <span class="close">X</span>
-            <h2>Rules</h2>
-            <img src="assets/images/Favicon original.png" alt="Image of rules" />
-            <p><ul>
-                <li>Scissors cuts Paper</li>
-                <li>Paper covers Rock</li>
-                <li> Rock crushes Lizard</li>
-                <li>Lizard poisons Spock</li>
-                <li> Spock smashes Scissors</li>
-                <li>Scissors decapitates Lizard</li>
-                <li>Lizard eats Paper</li>
-                <li>Paper disproves Spock</li>
-                <li>Spock vaporizes Rock</li>
-               <li>Rock crushes Scissors</li>
-            </ul></p>
-
-        </div>
-    </div>
-    
-    <!-- Button to open the rules modal -->
+        <!-- Button to open the rules modal -->
     <button class="rulesBtn" value="rules">Rules</button>
 
     <button id="rtnBtn" class="rtnBtn" value="home">Back to Menu?</button>
