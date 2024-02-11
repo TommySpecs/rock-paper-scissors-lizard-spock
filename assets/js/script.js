@@ -68,7 +68,6 @@ closeLivesModal.forEach(span => {
     });
 });
 
-
 //play game
 let choiceBtns= document.querySelectorAll(".circle-button");
 
@@ -111,12 +110,22 @@ function playGame(playerChoice) {
     }
 
        document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
-}
+
+    if (document.getElementById('lifeDisplayPlayer').textContent < 1){
+        document.getElementById('gameOverModal').style.display = 'block',
+        document.getElementById('gameOverResult').textcontent = 'You Lose!';
+    }
+    else if (document.getElementById('lifeDisplayPc').textContent < 1){
+        document.getElementById('gameOverModal').style.display = 'block',
+        document.getElementById('gameOverResult').textcontent = 'You Win!';
+    };
+ }
 
 let openMenu = document.querySelectorAll(".rtnBtn");
 
 openMenu.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('menuModal').style.display = 'block';
+        document.getElementById('gameOverModal').style.display = 'none';
     });
 });
