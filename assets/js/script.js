@@ -1,5 +1,7 @@
 let difficulty = 'Hard';
-let lives = 0;
+let lives = 3;
+document.getElementById('lifeDisplayPlayer').textContent = lives;
+document.getElementById('lifeDisplayPc').textContent = lives;  
 
 let icons = {
     "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
@@ -59,11 +61,13 @@ openLivesModal.forEach(btn => {
 
 closeLivesModal.forEach(span => {
     span.addEventListener("click", function (e) {
+        lives = document.getElementById('lives').valueAsNumber;
+        document.getElementById('lifeDisplayPlayer').textContent = lives;
+        document.getElementById('lifeDisplayPc').textContent = lives;              
         document.getElementById('livesModal').style.display = 'none';
     });
 });
 
-lives = document.getElementById('lives').valueAsNumber;
 
 //play game
 let choiceBtns= document.querySelectorAll(".circle-button");
@@ -87,6 +91,7 @@ function playGame(playerChoice) {
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
        
     let result = '';
+    
 
     if (playerChoice === computerChoice) {
         result = 'It\'s a tie!';
@@ -98,8 +103,11 @@ function playGame(playerChoice) {
         (playerChoice === 'spock' && (computerChoice === 'scissors' || computerChoice === 'rock'))
     ) {
         result = 'You win!';
+        document.getElementById('lifeDisplayPc').textContent = document.getElementById('lifeDisplayPc').textContent - 1;   
+       
     } else {
         result = 'You lose!';
+        document.getElementById('lifeDisplayPlayer').textContent = document.getElementById('lifeDisplayPlayer').textContent - 1;
     }
 
        document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
