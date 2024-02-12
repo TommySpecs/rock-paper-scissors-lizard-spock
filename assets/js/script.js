@@ -42,12 +42,14 @@ let closeRuleseModal = document.querySelectorAll(".close");
 
 openRulesMenuModal.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        document.getElementById('menuModal').style.display = 'none';
         document.getElementById('rulesModal').style.display = 'block';       
     });
 });
 
 openRulesModal.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        document.getElementById('menuModal').style.display = 'none';
         document.getElementById('rulesModal').style.display = 'block';
     });
 });
@@ -55,6 +57,7 @@ openRulesModal.forEach(btn => {
 closeRuleseModal.forEach(span => {
     span.addEventListener("click", function (e) {
         document.getElementById('rulesModal').style.display = 'none';
+        document.getElementById('menuModal').style.display = 'block';
     });
 });
 

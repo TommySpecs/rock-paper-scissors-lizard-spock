@@ -5,11 +5,15 @@ body {
     font-family: "josefin-sans", sans-serif;
     text-align: center;    
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center;   
 }
+h1, h2, h3 {
+    font-weight: Bold;
+    text-decoration: underline;
+}
+
 /*menu modal*/
-.menuModal {
+.menuModal, .rulesModal {
     position: fixed;
     z-index: 1;
     left: 0;
@@ -19,8 +23,11 @@ body {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);       
 }
-
-.menuModal-content {
+.rulesModal{
+    display:none;
+}
+/*Menu Modal Content*/
+.menuModal-content, .rulesModal-content {
     background-color: #fafafa;
     margin: 10% auto;
     padding: 20px;
@@ -28,11 +35,8 @@ body {
     width: 80%; 
     border-radius: 25%;            
 }
-.menuModal-content h1, h2{
-    font-weight: Bold;
-    text-decoration: underline;
-}
 
+/*Menu Buttons*/
 .menuModal-content button{
     border-radius: 25px;    
     padding: 20px;
@@ -81,6 +85,23 @@ background-color: #43DAFF;
      font-weight: bold;
 }
 
+/*Rules  Modal*/
+ul{
+    list-style-type: none;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*lives Modal*/
 .livesModal {
@@ -176,41 +197,7 @@ input {
     margin-top: 20px;
 }
 
-/*Rules  Modal styles */
-.rulesModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
-
-.rulesModal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /*Game Over  Modal */
 .gameOverModal {
