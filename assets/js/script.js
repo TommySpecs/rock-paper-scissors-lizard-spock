@@ -17,6 +17,7 @@ let closeMenuHard = document.querySelectorAll(".hard")
 
 closeMenuEasy.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
         difficulty= 'Easy';
         document.getElementById('lizard').style.display = 'none';
@@ -26,24 +27,32 @@ closeMenuEasy.forEach(btn => {
 
 closeMenuHard.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
-        difficulty= 'Hard' 
+        difficulty= 'Hard'      
         document.getElementById('lizard').style.display = 'block';
         document.getElementById('spock').style.display = 'block';       
     });
 });
 
 // Rules Modal 
+let openRulesMenuModal = document.querySelectorAll(".rulesBtnMenu");
 let openRulesModal = document.querySelectorAll(".rulesBtn");
-let closRuleseModal = document.querySelectorAll(".close");
+let closeRuleseModal = document.querySelectorAll(".close");
 
-openRulesModal.forEach(btn => {
+openRulesMenuModal.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('rulesModal').style.display = 'block';       
     });
 });
 
-closRuleseModal.forEach(span => {
+openRulesModal.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        document.getElementById('rulesModal').style.display = 'block';
+    });
+});
+
+closeRuleseModal.forEach(span => {
     span.addEventListener("click", function (e) {
         document.getElementById('rulesModal').style.display = 'none';
     });
@@ -126,6 +135,9 @@ let openMenu = document.querySelectorAll(".rtnBtn");
 openMenu.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('menuModal').style.display = 'block';
+        document.getElementById('Game').style.display = 'none';
         document.getElementById('gameOverModal').style.display = 'none';
+        document.getElementById('lifeDisplayPlayer').textContent = lives;
+        document.getElementById('lifeDisplayPc').textContent = lives; 
     });
 });
