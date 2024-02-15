@@ -63,22 +63,51 @@ closeRuleseModal.forEach(span => {
 
 //lives
 let openLivesModal = document.querySelectorAll(".livesBtn");
-let closeLivesModal = document.querySelectorAll(".closeLives");
+let closeLivesEasy= document.querySelectorAll(".easyLives")
+let closeLivesHard = document.querySelectorAll(".hardLives")
+
 
 openLivesModal.forEach(btn => {
     btn.addEventListener("click", function (e) {
-        document.getElementById('livesModal').style.display = 'block';
+    document.getElementById('livesModal').style.display = 'block';
     });
 });
 
-closeLivesModal.forEach(span => {
-    span.addEventListener("click", function (e) {
+const Lives = document.querySelector("#lifeCount");
+const input = document.querySelector("#lives");
+Lives.textContent = input.value;
+input.addEventListener("input", (event) => {
+  Lives.textContent = event.target.value;
+});
+
+closeLivesEasy.forEach(btn => {
+    btn.addEventListener("click", function (e) {
         lives = document.getElementById('lives').valueAsNumber;
         document.getElementById('lifeDisplayPlayer').textContent = lives;
-        document.getElementById('lifeDisplayPc').textContent = lives;              
+        document.getElementById('lifeDisplayPc').textContent = lives;   
+        document.getElementById('Game').style.display = 'block';
+        document.getElementById('menuModal').style.display = 'none';
         document.getElementById('livesModal').style.display = 'none';
+        difficulty= 'Easy';
+        document.getElementById('lizard').style.display = 'none';
+        document.getElementById('spock').style.display = 'none';
     });
 });
+
+closeLivesHard.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        lives = document.getElementById('lives').valueAsNumber;
+        document.getElementById('lifeDisplayPlayer').textContent = lives;
+        document.getElementById('lifeDisplayPc').textContent = lives;   
+        document.getElementById('Game').style.display = 'block';
+        document.getElementById('menuModal').style.display = 'none';
+        document.getElementById('livesModal').style.display = 'none';
+        difficulty= 'Hard'      
+        document.getElementById('lizard').style.display = 'block';
+        document.getElementById('spock').style.display = 'block';       
+    });
+});
+
 
 //play game
 let choiceBtns= document.querySelectorAll(".circle-button");
@@ -125,11 +154,11 @@ function playGame(playerChoice) {
 
     if (document.getElementById('lifeDisplayPlayer').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
-        document.getElementById('gameOverResult').textcontent = 'You Lose!';
+        document.getElementById('gameOverResult').innerHTML = 'You Lose!';
     }
     else if (document.getElementById('lifeDisplayPc').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
-        document.getElementById('gameOverResult').textcontent = 'You Win!';
+        document.getElementById('gameOverResult').innerHTML = 'You Win!';
     };
  }
 
@@ -139,6 +168,7 @@ openMenu.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('menuModal').style.display = 'block';
         document.getElementById('Game').style.display = 'none';
+        document.getElementById('livesModal').style.display = 'none';
         document.getElementById('gameOverModal').style.display = 'none';
         document.getElementById('lifeDisplayPlayer').textContent = lives;
         document.getElementById('lifeDisplayPc').textContent = lives; 

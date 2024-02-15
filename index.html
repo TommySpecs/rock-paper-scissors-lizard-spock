@@ -7,7 +7,7 @@
     <!--Link to Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!--title-->
-    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+    <title>ROCHAMBEAU!</title>
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link
@@ -71,45 +71,51 @@
             <h2>LIVES</h2>
             <input type="range" id="lives" name="lives" min="1" max="5" step="2" />
             <label for="lives">Lives</label>
-         <output id="lifeCount"></output>
+            <P>Lives:<output id="lifeCount"></output></P>
+            <button class="easyLives" value="Easy">EASY</button>
+            <button class="hardLives" value="Hard">HARD</button>
+            <button id="rtnBtnLives" class="rtnBtn" value="home">MENU</button>
         </div>
     </div>
 </div>
 
-<!--MAIN GAME-->
-    <!--Title-->
-    <div id="Game">
-    <h1>Rock Paper Scissors Lizard Spock</h1>
+ <!--MAIN GAME-->    
+ <div id="Game">
+     <!--Title-->
+    <h1>ROCHAMBEAU!</h1>
 
     <p>Click on one of the buttons below to make your choice:</p>
 
     <br>
-<!--Player Choice-->
+    <!--Player Choice-->
     <div class="circle-container">
-    <button class="circle-button" value='rock'><i class="fa-regular fa-hand-back-fist"></i>Rock</button>
-    <button class="circle-button" value='paper'><i class="fa-regular fa-hand"></i>Paper</button>
-    <button class="circle-button" value='scissors'><i class="fa-regular fa-hand-scissors"></i>Scissors</button>
-    <button id="lizard" class="circle-button" value='lizard'><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
-    <button id="spock" class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i>Spock</button>
+      <button class="circle-button" value='rock'><i class="fa-regular fa-hand-back-fist"></i>Rock</button>
+      <button class="circle-button" value='paper'><i class="fa-regular fa-hand"></i>Paper</button>
+      <button class="circle-button" value='scissors'><i class="fa-regular fa-hand-scissors"></i>Scissors</button>
+      <button id="lizard" class="circle-button" value='lizard'><i class="fa-regular fa-hand-lizard"></i>Lizard</button>
+      <button id="spock" class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i>Spock</button>
     </div>
     
-    <span id="lifeDisplayPlayer">Player:</span>
-    <span id="lifeDisplayPc">Computer:</span>
-
-    <span id="result"></span>
+    <div id="resultSection">
+      <div id="Names">Player:<span id="lifeDisplayPlayer">Player:</span></div>
+      <div id="Names">Computer:<span id="lifeDisplayPc">Player:</span></div>
+      <span id="result"></span>
+    </div>
    
 
         <!-- Button to open the rules modal -->
-    <button class="rulesBtn" value="rules">Rules</button>
-
-    <button id="rtnBtn" class="rtnBtn" value="home">Back to Menu?</button>
+   <div id="extraButtons">
+      <button class="rulesBtn" value="rules">RULES</button>
+      <button id="rtnBtn" class="rtnBtn" value="home">Menu</button>
+    </div>
 </div>
     <!--Game Over Modal-->
    <div id="gameOverModal" class="gameOverModal">
-        <div class="gameOver-Content">
-            <title>Game Over!</title>
-            <span id="gameOverResult"></span>
-            <button id="rtnBtn" class="rtnBtn" value="home">Back to Menu?</button>
+        <div class="gameOver-content">
+            <h3>Game Over!</h3>
+            <span id="gameOverResult">result</span>
+            <p id="gOMessage">place holder text</p>
+            <button id="rtnBtn" class="rtnBtn" value="home">MENU</button>
         </div>
    </div>
 
