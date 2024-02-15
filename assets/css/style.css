@@ -67,7 +67,7 @@ background-color: #43DAFF;
     font-weight: bold;
 }
 
-.rulesBtnMenu{
+#rulesBtnMenu{
     background-color: #F0EC01;
 }
 .rulesBtnMenu:hover {

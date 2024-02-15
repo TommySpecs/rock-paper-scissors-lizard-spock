@@ -1,8 +1,5 @@
-let difficulty = 'Hard';
-let lives = 3;
-document.getElementById('lifeDisplayPlayer').textContent = lives;
-document.getElementById('lifeDisplayPc').textContent = lives;  
 
+//Icons used in Game
 let icons = {
     "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
     "paper": "<i class=\"fa-regular fa-hand\"></i>",
@@ -12,9 +9,16 @@ let icons = {
 };
 
 //Menu Modal
+let difficulty = '';
 let closeMenuEasy= document.querySelectorAll(".easy")
 let closeMenuHard = document.querySelectorAll(".hard")
 
+/**
+ * Start Game Easy Mode
+ * The Easy Button stops displaying the Menu Modal
+ * Takes Player to the Game screen
+ * Stops Displaying the Lizard and spock buttons
+ */
 closeMenuEasy.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('Game').style.display = 'block';
@@ -25,6 +29,12 @@ closeMenuEasy.forEach(btn => {
     });
 });
 
+/**
+ * Start Game Hard Mode
+ * The Hard Button stops displaying the Menu Modal
+ * Takes Player to the Game screen
+ * Displays all available Player choices
+ */
 closeMenuHard.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('Game').style.display = 'block';
@@ -36,36 +46,33 @@ closeMenuHard.forEach(btn => {
 });
 
 // Rules Modal 
-let openRulesMenuModal = document.querySelectorAll(".rulesBtnMenu");
 let openRulesModal = document.querySelectorAll(".rulesBtn");
 let closeRuleseModal = document.querySelectorAll(".close");
 
-openRulesMenuModal.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        document.getElementById('menuModal').style.display = 'none';
-        document.getElementById('rulesModal').style.display = 'block';       
-    });
-});
-
 openRulesModal.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        document.getElementById('menuModal').style.display = 'none';
+    btn.addEventListener("click", function (e) {     
         document.getElementById('rulesModal').style.display = 'block';
     });
 });
 
 closeRuleseModal.forEach(span => {
     span.addEventListener("click", function (e) {
-        document.getElementById('rulesModal').style.display = 'none';
-        document.getElementById('menuModal').style.display = 'block';
+        document.getElementById('rulesModal').style.display = 'none'; 
     });
 });
 
 //lives
+let lives = 3;
+document.getElementById('lifeDisplayPlayer').textContent = lives;
+document.getElementById('lifeDisplayPc').textContent = lives;  
 let openLivesModal = document.querySelectorAll(".livesBtn");
 let closeLivesEasy= document.querySelectorAll(".easyLives")
 let closeLivesHard = document.querySelectorAll(".hardLives")
 
+/**let heartsLeft = input;
+for(let i=0; i< heartsLeft; i++){
+    hearts.innerhtml += '<i class="fa-solid fa-heart" style="color: #ff0000;"></i>';
+}*/
 
 openLivesModal.forEach(btn => {
     btn.addEventListener("click", function (e) {
@@ -79,6 +86,9 @@ Lives.textContent = input.value;
 input.addEventListener("input", (event) => {
   Lives.textContent = event.target.value;
 });
+
+
+
 
 closeLivesEasy.forEach(btn => {
     btn.addEventListener("click", function (e) {
@@ -107,7 +117,6 @@ closeLivesHard.forEach(btn => {
         document.getElementById('spock').style.display = 'block';       
     });
 });
-
 
 //play game
 let choiceBtns= document.querySelectorAll(".circle-button");
@@ -154,11 +163,13 @@ function playGame(playerChoice) {
 
     if (document.getElementById('lifeDisplayPlayer').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
-        document.getElementById('gameOverResult').innerHTML = 'You Lose!';
+        document.getElementById('gameOverResult').innerHTML = 'YOU LOSE!';
+        document.getElementById('gOMessage').innerHTML = 'Better Luck Next Time!, Want to try again?';
     }
     else if (document.getElementById('lifeDisplayPc').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
-        document.getElementById('gameOverResult').innerHTML = 'You Win!';
+        document.getElementById('gameOverResult').innerHTML = 'YOU WiN!';
+        document.getElementById('gOMessage').innerHTML = 'Congratulations!, Want to play again? ';
     };
  }
 
