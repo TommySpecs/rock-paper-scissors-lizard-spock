@@ -77,13 +77,6 @@ document.getElementById('lifeDisplayPc').textContent = lives;
 let openLivesModal = document.querySelectorAll(".livesBtn");
 let closeLivesEasy= document.querySelectorAll(".easyLives")
 let closeLivesHard = document.querySelectorAll(".hardLives")
-
-//questionable code for hearts
-/**let heartsLeft = input;
-for(let i=0; i< heartsLeft; i++){
-    hearts.innerhtml += '<i class="fa-solid fa-heart" style="color: #ff0000;"></i>';
-}*/
-
 /**
  * Open Lives Modal
  * The Lives Button Opens the Rules Modal over the current screen
@@ -124,8 +117,12 @@ closeLivesEasy.forEach(btn => {
         document.getElementById('livesModal').style.display = 'none';
         difficulty= 'Easy';
         document.getElementById('lizard').style.display = 'none';
-        document.getElementById('spock').style.display = 'none';
+        document.getElementById('spock').style.display = 'none';        
     });
+    let heartsLeft = input;
+for(let i=0; i< heartsLeft; i++){
+hearts.innerhtml += '<i class="fa-solid fa-heart" style="color: #ff0000;"></i>';
+}
 });
 /**
  *Hard Button-Lives Modal
