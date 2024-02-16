@@ -1,0 +1,227 @@
+# Project 2 - ROCHAMBEAU! TESTING
+
+## Contents
+- [Automated Testing](#automated-testing)
+- [Manual Testing](#manual-testing)
+- [Bugs](#bugs)
+
+## Automated Testing
+
+### W3C Validator
+####  *HTML*
+
+W3C was used to validate the HTML on all pages of the LychParlour photography website. I  checked the HTML via direct input and also by copying the page source and running these through the validator.
+
+HTML
+
+
+##### Index
+![W3C index](docs/test-images/w3c-html-validator-index-page.png)
+
+
+#### *CSS*
+CSS Validation can only be done by copying and pasting the CSS file contents into the direct input.
+
+- CSS 
+
+##### CSS
+#
+### Lighthouse
+
+Lighthouse was used which is found within the Chrome Developer Tools to allow me to test the performance, accessibility and SEO of the website.
+My primary focus for this site was the accessibility.
+
+##### Index
+![Lighthouse index](docs/test-images/lighthouse-index-desktop.png)
+
+##### Gallery
+![Lighthouse gallery](docs/test-images/lighthouse-gallery.png)
+
+##### Contact
+![Lighthouse contact](docs/test-images/lighthouse-contact.png)
+
+##### Thank You
+![Lighthouse thank you](docs/test-images/lighthouse-thank-you.png)
+
+
+### WAVE
+
+As accessibility was one of my main focuses for this website I used WAVE testing.
+WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
+
+##### Index
+![Wave index](docs/test-images/wave-index.png)
+
+##### Gallery
+![Wave gallery](docs/test-images/wave-gallery.png)
+
+##### Contact
+![Wave contact](docs/test-images/wave-contact.png)
+
+##### Thank You
+![Wave thank you](docs/test-images/wave-thank-you.png)
+
+ ---
+
+## Manual testing
+
+Some of the website functions needed to be tested manually, such as links around the page or the functionality and responsivness of added features. 
+
+### Devices Used
+
+| Device  | Name/ Size of Sevice| 
+|---------|---------------|
+| Desktop | 1920 x 1080 |
+| Laptop  | 1366 x 768 |
+| Tablet | Apple iPad Pro |
+| Mobile | Apple iPhone 13 Pro Max 128GB |
+
+### Browsers Used
+Google Chrome
+Safari
+
+#### Desktop (1920 x 1080)
+#### Browser (Google Chrome)
+
+| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
+| -------------------| ---------------------------------------------------------------------| ----------------------------------- | --------------------------| --------- |
+| Menu Modal         |                                                                      |                                     |                           |           |
+| Menu Modal         | When the page loads is this the first thing you                      | Load the site                       |                           |           |
+| Easy Button        | Close Menu Modal, Launch Game in Easy Mode (no lizard or spock)      | Click Easy Button                   |                           |           |
+| Hard Button        | Close Menu Modal, Launch Game in Hard Mode (All choices available)   | Click Hard Button                   |                           |           |
+| Rules Button       | Open Rules Modal                                                     | Click Rules Button                  |                           |           |
+| Close Rules Button | Close Rules Modal                                                    | Click Cross Button on Rules Modal   |                           |           |
+| Lives Button       | Open Lives Modal                                                     | Click Lives Button                  |                           |           |
+| Lives Modal        |                                                                      |                                     |                           |           |
+| Lives slider       | Move the range on the slider to three distinct stops                 | Move the range finder on the slider |                           |           |
+| Lives slider value | The Value of the Lives should change as the slider reaches each stop | Move the range finder on the slider |                           |           |
+| Easy Button (Lives)| Close Lives Modal, Launch Game in Easy Mode (no lizard or spock) With selected number of lives| Click Easy Button in the Lives Modal |                           |           |
+| Hard Button (Lives)| Close Lives Modal, Launch Game in Hard Mode (All choices available) With selected number of lives| Click Hard Button in the Lives |                           |           |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button in Lives Modal    |                           |            |
+| Game Screen       |                                                                       |                                     |                           |            |
+| Player Choices    |                                                                       |                                     |                           |            |
+| Rock Button       | Causes a result to come up                                            | Click Rock Button                   |                           |            |
+| Paper Button      | Causes a result to come up                                            | Click Paper Button                  |                           |            |
+| Scissors Button   | Causes a result to come up                                            | Click Scissors Button               |                           |            |
+| Lizard Button     | Causes a result to come up                                            | Click Lizard Button                 |                           |            |
+| Spock Button      | Causes a result to come up                                            | Click Spock Button                  |                           |            |
+| Player Lives      | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Computer Lives    | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button on the game screen|                           |            |
+| Rules Button      | Open Rules Modal                                                      | Click Rules button on the game screen|                          |            |
+| Game Over Modal   |                                                                       |                                     |                           |            |
+| Win Message       | Once the computer runs out of lives the You Win Message will appear   | complete a game with a win          |                           |            |
+| Lose Message      | Once the computer runs out of lives the You Lose Message will appear  |   complete a game with a Lose       |                           |            |
+| Menu Button       | Closes the Game Over Modal, Opens the Menu Modal                      | Click Menu button on the Game Over Modal|                       |            |  
+
+#### Laptop (1366 x 768)
+#### Browser (Google Chrome)
+| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
+| -------------------| ---------------------------------------------------------------------| ----------------------------------- | --------------------------| --------- |
+| Menu Modal         |                                                                      |                                     |                           |           |
+| Menu Modal         | When the page loads is this the first thing you                      | Load the site                       |                           |           |
+| Easy Button        | Close Menu Modal, Launch Game in Easy Mode (no lizard or spock)      | Click Easy Button                   |                           |           |
+| Hard Button        | Close Menu Modal, Launch Game in Hard Mode (All choices available)   | Click Hard Button                   |                           |           |
+| Rules Button       | Open Rules Modal                                                     | Click Rules Button                  |                           |           |
+| Close Rules Button | Close Rules Modal                                                    | Click Cross Button on Rules Modal   |                           |           |
+| Lives Button       | Open Lives Modal                                                     | Click Lives Button                  |                           |           |
+| Lives Modal        |                                                                      |                                     |                           |           |
+| Lives slider       | Move the range on the slider to three distinct stops                 | Move the range finder on the slider |                           |           |
+| Lives slider value | The Value of the Lives should change as the slider reaches each stop | Move the range finder on the slider |                           |           |
+| Easy Button (Lives)| Close Lives Modal, Launch Game in Easy Mode (no lizard or spock) With selected number of lives| Click Easy Button in the Lives Modal |                           |           |
+| Hard Button (Lives)| Close Lives Modal, Launch Game in Hard Mode (All choices available) With selected number of lives| Click Hard Button in the Lives |                           |           |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button in Lives Modal    |                           |            |
+| Game Screen       |                                                                       |                                     |                           |            |
+| Player Choices    |                                                                       |                                     |                           |            |
+| Rock Button       | Causes a result to come up                                            | Click Rock Button                   |                           |            |
+| Paper Button      | Causes a result to come up                                            | Click Paper Button                  |                           |            |
+| Scissors Button   | Causes a result to come up                                            | Click Scissors Button               |                           |            |
+| Lizard Button     | Causes a result to come up                                            | Click Lizard Button                 |                           |            |
+| Spock Button      | Causes a result to come up                                            | Click Spock Button                  |                           |            |
+| Player Lives      | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Computer Lives    | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button on the game screen|                           |            |
+| Rules Button      | Open Rules Modal                                                      | Click Rules button on the game screen|                          |            |
+| Game Over Modal   |                                                                       |                                     |                           |            |
+| Win Message       | Once the computer runs out of lives the You Win Message will appear   | complete a game with a win          |                           |            |
+| Lose Message      | Once the computer runs out of lives the You Lose Message will appear  |   complete a game with a Lose       |                           |            |
+| Menu Button       | Closes the Game Over Modal, Opens the Menu Modal                      | Click Menu button on the Game Over Modal|                       |            |  
+
+#### Tablet (Apple iPad Pro)
+#### Browser (Safari)
+| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
+| -------------------| ---------------------------------------------------------------------| ----------------------------------- | --------------------------| --------- |
+| Menu Modal         |                                                                      |                                     |                           |           |
+| Menu Modal         | When the page loads is this the first thing you                      | Load the site                       |                           |           |
+| Easy Button        | Close Menu Modal, Launch Game in Easy Mode (no lizard or spock)      | Click Easy Button                   |                           |           |
+| Hard Button        | Close Menu Modal, Launch Game in Hard Mode (All choices available)   | Click Hard Button                   |                           |           |
+| Rules Button       | Open Rules Modal                                                     | Click Rules Button                  |                           |           |
+| Close Rules Button | Close Rules Modal                                                    | Click Cross Button on Rules Modal   |                           |           |
+| Lives Button       | Open Lives Modal                                                     | Click Lives Button                  |                           |           |
+| Lives Modal        |                                                                      |                                     |                           |           |
+| Lives slider       | Move the range on the slider to three distinct stops                 | Move the range finder on the slider |                           |           |
+| Lives slider value | The Value of the Lives should change as the slider reaches each stop | Move the range finder on the slider |                           |           |
+| Easy Button (Lives)| Close Lives Modal, Launch Game in Easy Mode (no lizard or spock) With selected number of lives| Click Easy Button in the Lives Modal |                           |           |
+| Hard Button (Lives)| Close Lives Modal, Launch Game in Hard Mode (All choices available) With selected number of lives| Click Hard Button in the Lives |                           |           |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button in Lives Modal    |                           |            |
+| Game Screen       |                                                                       |                                     |                           |            |
+| Player Choices    |                                                                       |                                     |                           |            |
+| Rock Button       | Causes a result to come up                                            | Click Rock Button                   |                           |            |
+| Paper Button      | Causes a result to come up                                            | Click Paper Button                  |                           |            |
+| Scissors Button   | Causes a result to come up                                            | Click Scissors Button               |                           |            |
+| Lizard Button     | Causes a result to come up                                            | Click Lizard Button                 |                           |            |
+| Spock Button      | Causes a result to come up                                            | Click Spock Button                  |                           |            |
+| Player Lives      | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Computer Lives    | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button on the game screen|                           |            |
+| Rules Button      | Open Rules Modal                                                      | Click Rules button on the game screen|                          |            |
+| Game Over Modal   |                                                                       |                                     |                           |            |
+| Win Message       | Once the computer runs out of lives the You Win Message will appear   | complete a game with a win          |                           |            |
+| Lose Message      | Once the computer runs out of lives the You Lose Message will appear  |   complete a game with a Lose       |                           |            |
+| Menu Button       | Closes the Game Over Modal, Opens the Menu Modal                      | Click Menu button on the Game Over Modal|                       |            |  
+
+
+#### Mobile (Apple iPhone 13 Pro Max 128GB)
+#### Browser (Safari) 
+|| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
+| -------------------| ---------------------------------------------------------------------| ----------------------------------- | --------------------------| --------- |
+| Menu Modal         |                                                                      |                                     |                           |           |
+| Menu Modal         | When the page loads is this the first thing you                      | Load the site                       |                           |           |
+| Easy Button        | Close Menu Modal, Launch Game in Easy Mode (no lizard or spock)      | Click Easy Button                   |                           |           |
+| Hard Button        | Close Menu Modal, Launch Game in Hard Mode (All choices available)   | Click Hard Button                   |                           |           |
+| Rules Button       | Open Rules Modal                                                     | Click Rules Button                  |                           |           |
+| Close Rules Button | Close Rules Modal                                                    | Click Cross Button on Rules Modal   |                           |           |
+| Lives Button       | Open Lives Modal                                                     | Click Lives Button                  |                           |           |
+| Lives Modal        |                                                                      |                                     |                           |           |
+| Lives slider       | Move the range on the slider to three distinct stops                 | Move the range finder on the slider |                           |           |
+| Lives slider value | The Value of the Lives should change as the slider reaches each stop | Move the range finder on the slider |                           |           |
+| Easy Button (Lives)| Close Lives Modal, Launch Game in Easy Mode (no lizard or spock) With selected number of lives| Click Easy Button in the Lives Modal |                           |           |
+| Hard Button (Lives)| Close Lives Modal, Launch Game in Hard Mode (All choices available) With selected number of lives| Click Hard Button in the Lives |                           |           |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button in Lives Modal    |                           |            |
+| Game Screen       |                                                                       |                                     |                           |            |
+| Player Choices    |                                                                       |                                     |                           |            |
+| Rock Button       | Causes a result to come up                                            | Click Rock Button                   |                           |            |
+| Paper Button      | Causes a result to come up                                            | Click Paper Button                  |                           |            |
+| Scissors Button   | Causes a result to come up                                            | Click Scissors Button               |                           |            |
+| Lizard Button     | Causes a result to come up                                            | Click Lizard Button                 |                           |            |
+| Spock Button      | Causes a result to come up                                            | Click Spock Button                  |                           |            |
+| Player Lives      | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Computer Lives    | Lives stays the same on a win and a tie, lives decrease on a lose     | Play a round of the game            |                           |            |
+| Menu Button       | Closes the Lives Modal, Opens the Menu Modal                          | Click Menu button on the game screen|                           |            |
+| Rules Button      | Open Rules Modal                                                      | Click Rules button on the game screen|                          |            |
+| Game Over Modal   |                                                                       |                                     |                           |            |
+| Win Message       | Once the computer runs out of lives the You Win Message will appear   | complete a game with a win          |                           |            |
+| Lose Message      | Once the computer runs out of lives the You Lose Message will appear  |   complete a game with a Lose       |                           |            |
+| Menu Button       | Closes the Game Over Modal, Opens the Menu Modal                      | Click Menu button on the Game Over Modal|                       |            |  
+
+---
+### Bugs
+
+#### Fixed Bugs
+
+|               Bug               |                How I fixed it                      |
+|---------------------------------|----------------------------------------------------|     
+| All Rules Buttons opening the  Menu modal on closing  | simplified code for the Rule Modal Function  |
+|   |  | 
+
+#### Known bugs

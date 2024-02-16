@@ -119,10 +119,11 @@ closeLivesEasy.forEach(btn => {
         document.getElementById('lizard').style.display = 'none';
         document.getElementById('spock').style.display = 'none';        
     });
-    let heartsLeft = input;
-for(let i=0; i< heartsLeft; i++){
-hearts.innerhtml += '<i class="fa-solid fa-heart" style="color: #ff0000;"></i>';
-}
+
+   /**  let heartsLeft = input;
+    for(let i=0; i< heartsLeft; i++){
+    hearts.innerhtml += '<i class="fa-solid fa-heart" style="color: #ff0000;"></i>';
+}*/
 });
 /**
  *Hard Button-Lives Modal

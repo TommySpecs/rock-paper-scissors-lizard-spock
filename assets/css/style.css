@@ -109,8 +109,8 @@ background-color: #CBFAD6;
     margin: 10% auto;
     padding: 20px;
     border: 5px solid #ff9668;
-    width: 80%;
-    font-weight: bold;
+    width:80%;
+    font-weight: bold;   
 }
 /*list*/
 ul{
@@ -147,14 +147,25 @@ ul{
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 5px solid #ff9668;
     width: 80%;    
 }
-label{ font: 1rem 'Fira Sans',
-sans-serif;
+label{ 
+    display:none; 
 }
-input {
-    margin: 0.4rem;
+
+.easyLives{
+font-weight: bold;
+background-color:#84ff9f;
+
+}
+.hardLives{
+    font-weight: bold;
+    background-color:#ff5994;
+}
+.rtnBtn{
+    font-weight: bold;
+    background-color:#82b6ff;;
 }
 
 #Game{
@@ -182,24 +193,29 @@ input {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
 }
 
+/*Rock*/
 .circle-button:nth-child(1) {
     transform: rotate(270deg) translate(120px) rotate(-270deg);
 }
-
+/*Paper*/
 .circle-button:nth-child(2) {
     transform: rotate(337.5deg) translate(120px) rotate(-337.5deg);
 }
-
+/*Scissors*/
 .circle-button:nth-child(3) {
     transform: rotate(202.5deg) translate(120px) rotate(-202.5deg);
 }
-
+/*Lizard*/
 .circle-button:nth-child(4) {
     transform: rotate(145deg) translate(120px) rotate(-145deg);
 }
-
+/*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
 }
