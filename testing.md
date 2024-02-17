@@ -183,7 +183,7 @@ Safari
 
 #### Mobile (Apple iPhone 13 Pro Max 128GB)
 #### Browser (Safari) 
-|| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
+| Feature            | Expected Outcome                                                     | Testing Performed                   | Result                    | Pass/Fail |
 | -------------------| ---------------------------------------------------------------------| ----------------------------------- | --------------------------| --------- |
 | Menu Modal         |                                                                      |                                     |                           |           |
 | Menu Modal         | When the page loads is this the first thing you                      | Load the site                       |                           |           |
@@ -214,7 +214,10 @@ Safari
 | Lose Message      | Once the computer runs out of lives the You Lose Message will appear  |   complete a game with a Lose       |                           |            |
 | Menu Button       | Closes the Game Over Modal, Opens the Menu Modal                      | Click Menu button on the Game Over Modal|                       |            |  
 
+
 ---
+
+
 ### Bugs
 
 #### Fixed Bugs

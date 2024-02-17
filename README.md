@@ -1,15 +1,26 @@
 # ***ROCHAMBEAU!***
 
+## ***Introduction***
+Rochambeau! Is a web based game, created using HTML,CSS and JavaScript.
+It is based on the children's game Rock, Paper, Scissors and has the added bonus of incorporating the modern variant Rock, Paper, Scissors, Lizard, Spock. It is designed to target users who are looking to play a short, entertaining game.
+
+![generated mock up of ROCHAMBEAU!](doc/readme-images/mockup.png)
+
+[Click here to view the deployed Page](https://tommyspecs.github.io/rock-paper-scissors-lizard-spock/)
+
 
 ---
 
 ## ***Contents***
 
-- [***Rock, Paper, Scissors, Liazard, Spock***](#rock-paper-scissors-liazard-spock)
+  - [***ROCHAMBEAU!***](#rochambeau)
+  - [***Introduction***](#introduction)
   - [***Contents***](#contents)
   - [***User Experience*** (UX)](#user-experience-ux)
     - [*Site Goals*](#site-goals)
     - [*User Stories*](#user-stories)
+    - [*Planned Features*](#planned-features)
+    - [*Planned Implementation*](#planned-implementation)
   - [***User Experience Design (UXD)***](#user-experience-design-uxd)
     - [*Wire Frame*](#wire-frame)
     - [*Colour Scheme*](#colour-scheme)
@@ -31,10 +42,30 @@
 
 ## ***User Experience*** (UX)
 
-
 ### *Site Goals*
+- To provide users with a fun and simple game to play
+- To ensure that navigating the site is simple and intuitive
+- To provide users with alternative difficulty levels
+- To provide users the ability to choose the length of game
+- To ensure the game is fully accessible on desktop and devices that are touch enabled
+- To ensure the game is fully compliant with screen readers
 
 ### *User Stories*
+- As a user I want a fun and simple game to play
+- As a user I want to find my way around the site with ease
+- As a user I want to be able to control the time it takes to play the game
+- As a user I want to be able to play a more challenging version of the game
+- As a user I want to be able to play an easier version of the game
+- As a user I want to be able to use a screen reader to help me play the game
+
+### *Planned Features*
+- Responsive Design - The site should function correctly not matter which device a user could potentially use, such as Desktop, Laptop, Tablet and Mobile.
+- All navigation elements should be obvious on the site. 
+- Two difficulty levels should be available
+- The user should be able to select the number of rounds to play
+- The site should be fully accessible for screen reader users
+
+### *Planned Implementation*
 
 
 ---
@@ -44,9 +75,14 @@
 ### *Wire Frame*
 
 ### *Colour Scheme*
+![Part one of the used color pallete for the game](doc/readme-images/colorPalette1.png)
+![Part two of the used color pallete for the game](doc/readme-images/colorPalette2.png)
 
 
 ### *Typography*
+Google Fonts:
+- Bebas Neue
+- josefin-sans
 
 
 ### *Image Sourcing*
@@ -76,7 +112,8 @@ HTML, CSS and Javascript were used to create this website.
 
 ## ***Testing***
 
-[testing]()
+[testing](https://github.com/TommySpecs/rock-paper-scissors-lizard-spock/blob/main/testing.md)
+(Please click link to visit testing page)
 
 ---
 

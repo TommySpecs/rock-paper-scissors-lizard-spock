@@ -197,18 +197,21 @@ function playGame(playerChoice) {
          * If the Player wins the computer loses a life
          */
         result = 'You win!';
-        document.getElementById('lifeDisplayPc').textContent = document.getElementById('lifeDisplayPc').textContent - 1;   
+        document.getElementById('lifeDisplayPc').textContent = document.getElementById('lifeDisplayPc').textContent - 1;
+        document.getElementById('finalResult').style.color='green'; 
        
     } else {
         result = 'You lose!';
         document.getElementById('lifeDisplayPlayer').textContent = document.getElementById('lifeDisplayPlayer').textContent - 1;
+        document.getElementById('finalResult').style.color='red';  
     }
 /**
  * Result display
  * This shows the User their choice vs the Computer choice and the outcome of their choice
  */
-       document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
-     
+       document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}.`;
+       document.getElementById('finalResult').innerHTML = `${result}`;
+      
 /**
  * Game Over Nodal
  * This part of the function keeps track of the number of lives left
