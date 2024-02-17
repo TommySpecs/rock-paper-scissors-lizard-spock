@@ -204,48 +204,38 @@ background-color:#84ff9f;
 /*Rock*/
 .circle-button:nth-child(1) {
     transform: rotate(270deg) translate(120px) rotate(-270deg);
-    background-color: #84ff9f;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border: 5px solid #383C80    
-}
+    background-color: #84ff9f; 
+    border: 5px solid #383C80; 
+    justify-content: center;   
+} 
+  
 /*Paper*/
 .circle-button:nth-child(2) {
     transform: rotate(337.5deg) translate(120px) rotate(-337.5deg);
-    background-color: #ff5994;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border: 5px solid #383C80    
+    background-color: #ff5994;    
+    border: 5px solid #383C80; 
+    justify-content: center; 
 }
 /*Scissors*/
 .circle-button:nth-child(3) {
     transform: rotate(202.5deg) translate(120px) rotate(-202.5deg);
    background-color:#edff8f ; 
-   text-align: center;
-   align-content: center;
-   justify-content: center;
-   border: 5px solid #383C80    
+   border: 5px solid #383C80;
+   justify-content: center;   
 }
 /*Lizard*/
 .circle-button:nth-child(4) {
     transform: rotate(145deg) translate(120px) rotate(-145deg);
-    background-color:#82b6ff;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border: 5px solid #383C80    
+    background-color:#82b6ff;    
+    border: 5px solid #383C80;   
 }
 /*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
-    background-color: #ff9668;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border: 5px solid #383C80    
+    background-color: #ff9668;  
+    border: 5px solid #383C80;       
 }
+
 .rulesBtn{
     font-weight: bold;
     background-color: #edff8f
@@ -254,11 +244,12 @@ background-color:#84ff9f;
 /*results section*/
 #resultSection{
     border: 5px solid #ff9668;
-    text-align: center;
-    align-content: center;
-    justify-content: center;    
+    margin-top: 50px;
+    font-size: 150%;    
 }
-/*Results*/
+#Names{
+    font-family:"Bebas Neue", sans-serif;
+}
 #result {
     font-size: 18px;
     margin-top: 20px;
@@ -282,6 +273,10 @@ background-color:#84ff9f;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 5px solid #ff9668;
     width: 80%;
+}
+#gameOverResult{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 250%;
 }

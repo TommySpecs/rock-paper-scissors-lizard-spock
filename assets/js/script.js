@@ -208,7 +208,7 @@ function playGame(playerChoice) {
  * This shows the User their choice vs the Computer choice and the outcome of their choice
  */
        document.getElementById('result').innerHTML = `You chose ${icons[playerChoice]}, computer chose ${icons[computerChoice]}. ${result}`;
-
+     
 /**
  * Game Over Nodal
  * This part of the function keeps track of the number of lives left
@@ -218,11 +218,13 @@ function playGame(playerChoice) {
     if (document.getElementById('lifeDisplayPlayer').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
         document.getElementById('gameOverResult').innerHTML = 'YOU LOSE!';
+        document.getElementById('gameOverResult').style.color='red';
         document.getElementById('gOMessage').innerHTML = 'Better Luck Next Time!, Want to try again?';
     }
     else if (document.getElementById('lifeDisplayPc').textContent < 1){
         document.getElementById('gameOverModal').style.display = 'block',
-        document.getElementById('gameOverResult').innerHTML = 'YOU WiN!';
+        document.getElementById('gameOverResult').innerHTML = 'YOU WIN!';
+        document.getElementById('gameOverResult').style.color='green';
         document.getElementById('gOMessage').innerHTML = 'Congratulations!, Want to play again? ';
     };
  }
