@@ -108,6 +108,7 @@ background-color: #CBFAD6;
     background-color: #fafafa;
     margin: 10% auto;
     padding: 20px;
+    left:5px;
     border: 5px solid #ff9668;
     width:80%;
     font-weight: bold;   
@@ -229,8 +230,9 @@ background-color:#84ff9f;
     background-color:#82b6ff;    
     border: 5px solid #383C80;
     justify-content: center;
-    align-content: center;  
-}
+    align-content: center;
+    }
+   
 /*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
@@ -264,10 +266,14 @@ font-weight: bold;
 }
 
 .rulesBtnGame{
-
+height: 50px;
+width: 100px;
+font-size:100%
 }
 .menuBtnGame{
-
+    height: 50px;
+    width: 100px;
+    font-size:100%
 }
 
 /*Game Over  Modal */
