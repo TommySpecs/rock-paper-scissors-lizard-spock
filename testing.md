@@ -224,7 +224,7 @@ Safari
 
 |               Bug               |                How I fixed it                      |
 |---------------------------------|----------------------------------------------------|     
-| All Rules Buttons opening the  Menu modal on closing  | simplified code for the Rule Modal Function  |
+| All Rules Buttons opening the  Menu modal on closing  | Simplified code for the Rule Modal Function  |
 |   |  | 
 
 #### Known bugs
