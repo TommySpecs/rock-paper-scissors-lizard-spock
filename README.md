@@ -73,6 +73,12 @@ It is based on the children's game Rock, Paper, Scissors and has the added bonus
 ## ***User Experience Design (UXD)***
 
 ### *Wire Frame*
+I utilised Balsamiq to produce wireframes of how the game would appear across different devices. 
+Although the game is intended to be contained within one page, I produced wireframes for the different content that would appear on the page. 
+Using Balsamiq helped me to consider many different layouts for the game elements before choosing the final design.
+
+#### *Main Menu*
+![Screenshot of Wireframe mock up of Main Menu](doc/readme-images/wireframe-menu.png)
 
 ### *Colour Scheme*
 ![Part one of the used color pallete for the game](doc/readme-images/colorPalette1.png)

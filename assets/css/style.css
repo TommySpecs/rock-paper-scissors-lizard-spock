@@ -226,20 +226,18 @@ background-color:#84ff9f;
 }
 /*Lizard*/
 .circle-button:nth-child(4) {
-    transform: rotate(145deg) translate(120px) rotate(-145deg);
+    transform: rotate(120deg) translate(120px) rotate(-120deg);
     background-color:#82b6ff;    
     border: 5px solid #383C80;
     justify-content: center;
-    align-content: center;
-    }
+}
    
 /*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
     background-color: #ff9668;  
     border: 5px solid #383C80;
-    justify-content: center;
-    align-content: center;       
+    justify-content: center;        
 }
 
 .rulesBtn{
