@@ -41,23 +41,6 @@ My primary focus for this site was the accessibility.
 ##### Thank You
 
 
-
-### WAVE
-
-As accessibility was one of my main focuses for this website I used WAVE testing.
-WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
-
-##### Index
-
-##### Gallery
-
-
-##### Contact
-
-
-##### Thank You
-
-
  ---
 
 ## Manual testing

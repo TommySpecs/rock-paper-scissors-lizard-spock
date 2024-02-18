@@ -179,17 +179,17 @@ function playGame(playerChoice) {
  * If Computer lives drop below 1 then the game ends and the YOU WIN message is given 
  */
     if (document.getElementById('lifeDisplayPlayer').textContent < 1){
-        document.getElementById('gameOverModal').style.display = 'block',
+        document.getElementById('gameOverModal').style.display = 'block';
         document.getElementById('gameOverResult').innerHTML = 'YOU LOSE!';
         document.getElementById('gameOverResult').style.color='red';
         document.getElementById('gOMessage').innerHTML = 'Better Luck Next Time!, Want to try again?';
     }
     else if (document.getElementById('lifeDisplayPc').textContent < 1){
-        document.getElementById('gameOverModal').style.display = 'block',
+        document.getElementById('gameOverModal').style.display = 'block';
         document.getElementById('gameOverResult').innerHTML = 'YOU WIN!';
         document.getElementById('gameOverResult').style.color='green';
         document.getElementById('gOMessage').innerHTML = 'Congratulations!, Want to play again? ';
-    };
+    }
  }
  
 let openMenu = document.querySelectorAll(".rtnBtn");
