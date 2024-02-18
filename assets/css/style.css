@@ -84,10 +84,10 @@ background-color: #CBFAD6;
     font-weight: bold;
 }
 /*Rules Menu Button*/
-#rulesBtnMenu{
+.rulesBtnMenu{
     background-color: #edff8f;
 }
-#rulesBtnMenu:hover {
+.rulesBtnMenu:hover {
     background-color: #F0F8C9;
     border-radius: 75%;
     font-weight: bold;
@@ -261,10 +261,10 @@ label{
 #resultSection{
     border: 5px solid #ff9668;
     margin-top: 50px;
-    font-size: 150%;    
-}
+    font-size: 150%; 
+  }
 /*Names for Life Tracking*/
-#Names{
+.Names{
     font-family:"Bebas Neue", sans-serif;
 }
 /*Player and computer choice*/

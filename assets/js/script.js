@@ -21,7 +21,6 @@ let closeMenuHard = document.querySelectorAll(".hard");
  * Stops Displaying the Lizard and spock buttons
  */
 
-
 closeMenuEasy.forEach(btn => {
     btn.addEventListener("click", function (e) {
         lives = document.getElementById('lives').valueAsNumber;
@@ -39,14 +38,19 @@ closeMenuEasy.forEach(btn => {
 /**
  * Start Game Hard Mode
  * The Hard Button stops displaying the Menu Modal
+ * If opened through Lives Modal-closes Lives Modal
  * Sets Difficulty to Hard
  * Takes User to the Game screen
  * Displays all available Player choices
  */
 closeMenuHard.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        lives = document.getElementById('lives').valueAsNumber;
+        document.getElementById('lifeDisplayPlayer').textContent = lives;
+        document.getElementById('lifeDisplayPc').textContent = lives;   
         document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
+        document.getElementById('livesModal').style.display = 'none';
         difficulty= 'Hard';      
         document.getElementById('lizard').style.display = 'block';
         document.getElementById('spock').style.display = 'block';       
@@ -81,8 +85,6 @@ let lives = 3;
 document.getElementById('lifeDisplayPlayer').textContent = lives;
 document.getElementById('lifeDisplayPc').textContent = lives;  
 let openLivesModal = document.querySelectorAll(".livesBtn");
-
-let closeLivesHard = document.querySelectorAll(".hardLives");
 /**
  * Open Lives Modal
  * The Lives Button Opens the Rules Modal over the current screen
@@ -102,29 +104,6 @@ const input = document.querySelector("#lives");
 Lives.textContent = input.value;
 input.addEventListener("input", (event) => {
   Lives.textContent = event.target.value;
-});
-
-
-/**
- *Hard Button-Lives Modal
- *The Hard Button stops displaying the Lives and Menu Modal
- *Set the lives selected by the slider
- *Sets Difficulty to Hard
- *Takes User to the Game screen 
- *Displays all available Player choices
- */
-closeLivesHard.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        lives = document.getElementById('lives').valueAsNumber;
-        document.getElementById('lifeDisplayPlayer').textContent = lives;
-        document.getElementById('lifeDisplayPc').textContent = lives;   
-        document.getElementById('Game').style.display = 'block';
-        document.getElementById('menuModal').style.display = 'none';
-        document.getElementById('livesModal').style.display = 'none';
-        difficulty= 'Hard';      
-        document.getElementById('lizard').style.display = 'block';
-        document.getElementById('spock').style.display = 'block';       
-    });
 });
 
 //play game

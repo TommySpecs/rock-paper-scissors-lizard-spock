@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Link to Stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <!--title-->
     <title>ROCHAMBEAU!</title>
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
   </head>
 
 <body>
@@ -34,7 +24,7 @@
         <br>
         <button class="easy" value="Easy">EASY</button>
         <button class="hard" value="Hard">HARD</button>
-        <button id="rulesBtnMenu" class="rulesBtn" value="rules">RULES</button>
+        <button class="rulesBtn rulesBtnMenu" value="rules">RULES</button>
         <button class="livesBtn" value="lives">LIVES</button>
     </div>
 </div>
@@ -44,14 +34,15 @@
     <div class="rulesModal-content">
         <span class="close"><i class="fa-solid fa-x"></i></span>
         <h2>Rules</h2>
-        <img src="assets/images/Favicon original.png" alt="Image of rules" />
-        <ul>
-            <h3>Easy</h3>
+        <img src="assets/images/Favicon-original.png" alt="Image of rules"/>
+        <h3>Easy</h3>
+        <ul>            
             <li>Rock<i class="fa-regular fa-hand-back-fist"></i> crushes Scissors<i class="fa-regular fa-hand-scissors"></i></li>
             <li>Paper<i class="fa-regular fa-hand"></i> covers Rock<i class="fa-regular fa-hand-back-fist"></i></li>
             <li>Scissors<i class="fa-regular fa-hand-scissors"></i> cuts Paper<i class="fa-regular fa-hand"></i></li>
-            <br>
-            <h3>Hard</h3>
+          </ul>
+        <h3>Hard</h3>
+          <Ul>
             <li>Scissors<i class="fa-regular fa-hand-scissors"></i> cuts Paper<i class="fa-regular fa-hand"></i></li>
             <li>Paper<i class="fa-regular fa-hand"></i> covers Rock<i class="fa-regular fa-hand-back-fist"></i></li>
             <li>Rock <i class="fa-regular fa-hand-back-fist"></i> crushes Lizard<i class="fa-regular fa-hand-lizard"></i></li>
@@ -71,7 +62,7 @@
     <div class="livesModal-content">        
         <div>
             <h2>LIVES</h2>
-            <input type="range" id="lives" name="lives" min="1" max="5" step="2" />
+            <input type="range" id="lives" name="lives" min="1" max="5" step="2"/>
             <label for="lives">Lives</label>
             <P>Lives:<output id="lifeCount"></output></P>
             <button class="easyLives easy" value="Easy">EASY</button>
@@ -101,15 +92,15 @@
     
     <!--Results Section-->
     <div id="resultSection">
-      <div id="Names">Player:<span id="lifeDisplayPlayer">Player:</span></div>
-      <div id="Names">Computer:<span id="lifeDisplayPc">Player:</span></div>
+      <div class="Names">Player:<span id="lifeDisplayPlayer">Player:</span></div>
+      <div class="Names">Computer:<span id="lifeDisplayPc">Player:</span></div>
       <span id="result"></span>
       <br>
       <span id="finalResult"></span>
       <!-- Extra Buttons on Game Screen-->
       <div id="extraButtons">
         <button class="rulesBtn rulesBtnGame" value="rules">RULES</button>
-        <button id="rtnBtn" class="rtnBtn menuBtnGame" value="home">MENU</button>
+        <button class="rtnBtn menuBtnGame" value="home">MENU</button>
       </div>
   </div>
     </div>
@@ -120,11 +111,9 @@
             <h3>Game Over!</h3>
             <span id="gameOverResult">result</span>
             <p id="gOMessage">place holder text</p>
-            <button id="rtnBtn" class="rtnBtn" value="home">MENU</button>
+            <button class="rtnBtn" value="home">MENU</button>
         </div>
    </div>
-
-
     <!--Font Awesome-->
     <script
       src="https://kit.fontawesome.com/c814d3896b.js"
