@@ -43,6 +43,7 @@ It is based on the children's game Rock, Paper, Scissors and has the added bonus
 ## ***User Experience*** (UX)
 
 ### *Site Goals*
+- To be designed primarilly for children
 - To provide users with a fun and simple game to play
 - To ensure that navigating the site is simple and intuitive
 - To provide users with alternative difficulty levels
