@@ -2,6 +2,7 @@
 
 ## Contents
 - [Automated Testing](#automated-testing)
+    - [W3C Validator](#w3c-validator)
 - [Manual Testing](#manual-testing)
 - [Bugs](#bugs)
 
@@ -15,33 +16,30 @@ W3C was used to validate the HTML on all pages of the LychParlour photography we
 HTML
 
 
-##### Index
-![W3C index](docs/test-images/w3c-html-validator-index-page.png)
 
 
 #### *CSS*
 CSS Validation can only be done by copying and pasting the CSS file contents into the direct input.
 
-- CSS 
 
-##### CSS
-#
+
+
 ### Lighthouse
 
 Lighthouse was used which is found within the Chrome Developer Tools to allow me to test the performance, accessibility and SEO of the website.
 My primary focus for this site was the accessibility.
 
 ##### Index
-![Lighthouse index](docs/test-images/lighthouse-index-desktop.png)
+
 
 ##### Gallery
-![Lighthouse gallery](docs/test-images/lighthouse-gallery.png)
+
 
 ##### Contact
-![Lighthouse contact](docs/test-images/lighthouse-contact.png)
+
 
 ##### Thank You
-![Lighthouse thank you](docs/test-images/lighthouse-thank-you.png)
+
 
 
 ### WAVE
@@ -50,16 +48,15 @@ As accessibility was one of my main focuses for this website I used WAVE testing
 WAVE is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.
 
 ##### Index
-![Wave index](docs/test-images/wave-index.png)
 
 ##### Gallery
-![Wave gallery](docs/test-images/wave-gallery.png)
+
 
 ##### Contact
-![Wave contact](docs/test-images/wave-contact.png)
+
 
 ##### Thank You
-![Wave thank you](docs/test-images/wave-thank-you.png)
+
 
  ---
 
@@ -225,6 +222,6 @@ Safari
 |               Bug               |                How I fixed it                      |
 |---------------------------------|----------------------------------------------------|     
 | All Rules Buttons opening the  Menu modal on closing  | Simplified code for the Rule Modal Function  |
-|   |  | 
+| Spock and Lizard Button Icons not aligning | Removed padding from parent container element  | 
 
 #### Known bugs
