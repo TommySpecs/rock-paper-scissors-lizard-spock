@@ -3,11 +3,16 @@
 
 body {
     font-family: "josefin-sans", sans-serif;
+    color: #000000;
     text-align: center;    
     align-items: center;
     justify-content: center;   
 }
-h1, h2, h3 {
+
+#Game{
+    display:none;
+}
+/*Global Rules for Headings*/h1, h2, h3 {
     font-weight: Bold;
     text-decoration: underline;
     font-family: "Bebas Neue", sans-serif;
@@ -20,7 +25,7 @@ h2, h3 {
     font-size: 250%;
 }
 
-/*menu modal*/
+/*Menu Modal*/
 .menuModal {
     position: fixed;
     z-index: 1;
@@ -55,7 +60,8 @@ h2, h3 {
     margin: 5px;    
 }
 
-/*individual Mebu buttons*/
+/*Individual Menu Buttons*/
+/*Easy Menu Button*/
 .easy{
     background-color: #84ff9f;
 }
@@ -64,7 +70,7 @@ background-color: #CBFAD6;
     border-radius: 75%;
     font-weight: bold;
 }
-
+/*Hard Menu Button*/
 .hard{ 
     background-color: #ff5994;
 }
@@ -73,7 +79,7 @@ background-color: #CBFAD6;
     border-radius: 75%;
     font-weight: bold;
 }
-
+/*Rules Menu Button*/
 #rulesBtnMenu{
     background-color: #edff8f;
 }
@@ -82,7 +88,7 @@ background-color: #CBFAD6;
     border-radius: 75%;
     font-weight: bold;
 }
-
+/*Lives Menu Button*/
 .livesBtn{
     background-color:#82b6ff;
 }
@@ -113,11 +119,12 @@ background-color: #CBFAD6;
     width:80%;
     font-weight: bold;   
 }
-/*list*/
+/*Text Content for Rules*/
 ul{
     list-style-type: none;
     padding:none;
 }
+/*Rules Modal Closer*/
 .close {
     color: #aaa;
     float: right;
@@ -151,28 +158,39 @@ ul{
     border: 5px solid #ff9668;
     width: 80%;    
 }
+/*Slider Label*/
 label{ 
     display:none; 
 }
-
+/*Easy Lives Button*/
 .easyLives{
-font-weight: bold;
-background-color:#84ff9f;
-
+    font-weight: bold;
+    background-color:#84ff9f;
+      height: 50px;
+    width: 100px;
+    font-size:100%;
+    text-align:center;
 }
+/*Hard Lives Button*/
 .hardLives{
     font-weight: bold;
     background-color:#ff5994;
+    height: 50px;
+    width: 100px;
+    font-size:100%;
+    text-align:center;
 }
+/* Menu Lives Button*/
 .rtnBtn{
     font-weight: bold;
-    background-color:#82b6ff;;
+    background-color:#82b6ff;
+    height: 50px;
+    width: 100px;
+    font-size:100%;
+    text-align:center;
 }
 
-#Game{
-    display:none;
-}
-/*Player Choice Buttons*/
+/*Player Choice Buttons Container*/
 .circle-container {
     position:relative;
     width: 250px;
@@ -186,30 +204,27 @@ background-color:#84ff9f;
     margin: 0 auto;
     top: 50px;
 }
-
+/*Player Choice Buttons*/
 .circle-button {
     position: absolute;
     font-size: 50px;
     margin: 20px;
-    padding: 10px 20px;
+ 
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    text-align: center;
-    align-content: center;
+  
 }
-
 /*Rock*/
 .circle-button:nth-child(1) {
     transform: rotate(270deg) translate(120px) rotate(-270deg);
     background-color: #84ff9f; 
     border: 5px solid #383C80; 
     justify-content: center;   
-} 
-  
+}   
 /*Paper*/
 .circle-button:nth-child(2) {
     transform: rotate(337.5deg) translate(120px) rotate(-337.5deg);
@@ -219,19 +234,18 @@ background-color:#84ff9f;
 }
 /*Scissors*/
 .circle-button:nth-child(3) {
-    transform: rotate(202.5deg) translate(120px) rotate(-202.5deg);
+   transform: rotate(202.5deg) translate(120px) rotate(-202.5deg);
    background-color:#edff8f ; 
    border: 5px solid #383C80;
    justify-content: center;   
 }
 /*Lizard*/
 .circle-button:nth-child(4) {
-    transform: rotate(120deg) translate(120px) rotate(-120deg);
+    transform: rotate(145deg) translate(120px) rotate(-145deg);
     background-color:#82b6ff;    
     border: 5px solid #383C80;
     justify-content: center;
-}
-   
+}   
 /*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
@@ -239,39 +253,45 @@ background-color:#84ff9f;
     border: 5px solid #383C80;
     justify-content: center;        
 }
-
-.rulesBtn{
-    font-weight: bold;
-    background-color: #edff8f
-}
-
 /*results section*/
 #resultSection{
     border: 5px solid #ff9668;
     margin-top: 50px;
     font-size: 150%;    
 }
+/*Names for Life Tracking*/
 #Names{
     font-family:"Bebas Neue", sans-serif;
 }
+/*Player and computer choice*/
 #result {
     font-size: 69%;
     margin-top: 20px;
 }
+/*you win or you lose*/
 #finalResult{
-font-size: 100%;
-font-weight: bold;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/*rules button on game screen*/
+.rulesBtn{
+    font-weight: bold;
+    background-color: #edff8f
 }
 
 .rulesBtnGame{
-height: 50px;
-width: 100px;
-font-size:100%
+    height: 50px;
+    width: 100px;
+    font-size:100%;
+    text-align:center;
 }
+/*menu button on game screen*/
 .menuBtnGame{
     height: 50px;
     width: 100px;
-    font-size:100%
+    font-size:100%; 
+    text-align:center;
 }
 
 /*Game Over  Modal */
@@ -286,7 +306,6 @@ font-size:100%
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .gameOver-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -294,7 +313,11 @@ font-size:100%
     border: 5px solid #ff9668;
     width: 80%;
 }
+/*You win or You Lose*/
 #gameOverResult{
     font-family: "Bebas Neue", sans-serif;
     font-size: 250%;
+}
+#gOMessage{
+    font-size: 125%;
 }

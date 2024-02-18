@@ -119,12 +119,8 @@ closeLivesEasy.forEach(btn => {
         document.getElementById('lizard').style.display = 'none';
         document.getElementById('spock').style.display = 'none';        
     });
-
-   let heartsLeft = input;
-    for(let i=0; i< heartsLeft; i++){
-    heartsLeft.innerhtml += '<i class=\"fa-solid fa-heart\"></i>';
-}
 });
+
 /**
  *Hard Button-Lives Modal
  *The Hard Button stops displaying the Lives and Menu Modal
@@ -232,7 +228,6 @@ function playGame(playerChoice) {
     };
  }
  
-
 let openMenu = document.querySelectorAll(".rtnBtn");
 /**
  *Return to Menu Button
