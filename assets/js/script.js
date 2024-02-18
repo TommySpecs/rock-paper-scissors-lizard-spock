@@ -1,4 +1,3 @@
-
 //Icons used in Game
 let icons = {
     "rock": "<i class=\"fa-regular fa-hand-back-fist\"></i>",
@@ -10,23 +9,30 @@ let icons = {
 
 //Menu Modal
 let difficulty = '';
-let closeMenuEasy= document.querySelectorAll(".easy")
-let closeMenuHard = document.querySelectorAll(".hard")
+let closeMenuEasy= document.querySelectorAll(".easy");
+let closeMenuHard = document.querySelectorAll(".hard");
 
 /**
  * Start Game Easy Mode
  * The Easy Button stops displaying the Menu Modal
+ * If opened through Lives Modal-closes Lives Modal
  * Sets Difficulty to Easy
  * Takes User to the Game screen
  * Stops Displaying the Lizard and spock buttons
  */
+
+
 closeMenuEasy.forEach(btn => {
     btn.addEventListener("click", function (e) {
+        lives = document.getElementById('lives').valueAsNumber;
+        document.getElementById('lifeDisplayPlayer').textContent = lives;
+        document.getElementById('lifeDisplayPc').textContent = lives;   
         document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
+        document.getElementById('livesModal').style.display = 'none';
         difficulty= 'Easy';
         document.getElementById('lizard').style.display = 'none';
-        document.getElementById('spock').style.display = 'none';
+        document.getElementById('spock').style.display = 'none';        
     });
 });
 
@@ -41,7 +47,7 @@ closeMenuHard.forEach(btn => {
     btn.addEventListener("click", function (e) {
         document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
-        difficulty= 'Hard'      
+        difficulty= 'Hard';      
         document.getElementById('lizard').style.display = 'block';
         document.getElementById('spock').style.display = 'block';       
     });
@@ -75,8 +81,8 @@ let lives = 3;
 document.getElementById('lifeDisplayPlayer').textContent = lives;
 document.getElementById('lifeDisplayPc').textContent = lives;  
 let openLivesModal = document.querySelectorAll(".livesBtn");
-let closeLivesEasy= document.querySelectorAll(".easyLives")
-let closeLivesHard = document.querySelectorAll(".hardLives")
+
+let closeLivesHard = document.querySelectorAll(".hardLives");
 /**
  * Open Lives Modal
  * The Lives Button Opens the Rules Modal over the current screen
@@ -98,28 +104,6 @@ input.addEventListener("input", (event) => {
   Lives.textContent = event.target.value;
 });
 
-/**
- *Easy Button-Lives Modal
- *The Easy Button stops displaying the Lives and Menu Modal
- *Set the lives selected by the slider
- *Sets Difficulty to Easy
- *Takes User to the Game screen 
- *Stops Displaying the Lizard and spock buttons
- */
-
-closeLivesEasy.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        lives = document.getElementById('lives').valueAsNumber;
-        document.getElementById('lifeDisplayPlayer').textContent = lives;
-        document.getElementById('lifeDisplayPc').textContent = lives;   
-        document.getElementById('Game').style.display = 'block';
-        document.getElementById('menuModal').style.display = 'none';
-        document.getElementById('livesModal').style.display = 'none';
-        difficulty= 'Easy';
-        document.getElementById('lizard').style.display = 'none';
-        document.getElementById('spock').style.display = 'none';        
-    });
-});
 
 /**
  *Hard Button-Lives Modal
@@ -137,7 +121,7 @@ closeLivesHard.forEach(btn => {
         document.getElementById('Game').style.display = 'block';
         document.getElementById('menuModal').style.display = 'none';
         document.getElementById('livesModal').style.display = 'none';
-        difficulty= 'Hard'      
+        difficulty= 'Hard';      
         document.getElementById('lizard').style.display = 'block';
         document.getElementById('spock').style.display = 'block';       
     });
@@ -180,6 +164,7 @@ function playGame(playerChoice) {
 
     if (playerChoice === computerChoice) {
         result = 'It\'s a tie!';
+        document.getElementById('finalResult').style.color='black';
     } else if (
         (playerChoice === 'rock' && (computerChoice === 'scissors' || computerChoice === 'lizard')) ||
         (playerChoice === 'paper' && (computerChoice === 'rock' || computerChoice === 'spock')) ||

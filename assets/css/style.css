@@ -9,6 +9,10 @@ body {
     justify-content: center;   
 }
 
+button{
+    cursor: pointer;
+}
+
 #Game{
     display:none;
 }
@@ -187,7 +191,10 @@ label{
     height: 50px;
     width: 100px;
     font-size:100%;
-    text-align:center;
+    text-align:center;   
+}
+.rtnBtn:hover{
+    border-radius: 75%;
 }
 /*Player Choice Buttons Container*/
 .circle-container {
@@ -282,6 +289,9 @@ label{
     width: 100px;
     font-size:100%;
     text-align:center;
+}
+.rulesBtnGame:hover{
+    border-radius: 75%;
 }
 /*menu button on game screen*/
 .menuBtnGame{
