@@ -16,22 +16,22 @@
 
 <body>
 <!--Menu Modal-->
-<div id="menuModal" class="menuModal">
-    <div class="menuModal-content">  
+<div id="menu-modal" class="menu-modal">
+    <div class="menu-modal-content">  
         <h1>ROCHAMBEAU!</h1>
         <br>
         <h2>MENU</h2>
         <br>
         <button class="easy" value="Easy">EASY</button>
         <button class="hard" value="Hard">HARD</button>
-        <button class="rulesBtn rulesBtnMenu" value="rules">RULES</button>
-        <button class="livesBtn" value="lives">LIVES</button>
+        <button class="rules-btn rules-btn-menu" value="rules">RULES</button>
+        <button class="lives-btn" value="lives">LIVES</button>
     </div>
 </div>
 
 <!-- Rules Modal -->
-<div id="rulesModal" class="rulesModal">
-    <div class="rulesModal-content">
+<div id="rules-modal" class="rules-modal">
+    <div class="rules-modal-content">
         <span class="close"><i class="fa-solid fa-x"></i></span>
         <h2>Rules</h2>
         <img src="assets/images/Favicon-original.png" alt="Image of rules"/>
@@ -58,16 +58,15 @@
 </div>
 
 <!--Lives Modal-->
-<div id="livesModal" class="livesModal">
-    <div class="livesModal-content">        
+<div id="lives-modal" class="lives-modal">
+    <div class="lives-modal-content">        
         <div>
             <h2>LIVES</h2>
-            <input type="range" id="lives" name="lives" min="1" max="5" step="2"/>
-            <label for="lives">Lives</label>
-            <p>Lives:<output id="lifeCount"></output></p>
-            <button class="easyLives easy" value="Easy">EASY</button>
-            <button class="hardLives hard" value="Hard">HARD</button>
-            <button id="rtnBtnLives" class="rtnBtn" value="home">MENU</button>
+            <input type="range" id="lives" name="lives" min="1" max="5" step="2" aria-label="amount of lives"/>            
+            <p>Lives:<output id="life-count"></output></p>
+            <button class="easy-lives easy" value="Easy">EASY</button>
+            <button class="hard-lives hard" value="Hard">HARD</button>
+            <button id="rtn-btn-lives" class="rtn-btn" value="home">MENU</button>
         </div>
     </div>
 </div>
@@ -83,35 +82,35 @@
     <br>
     <!--Player Choice-->
     <div class="circle-container">
-      <button class="circle-button" value='rock'><i class="fa-regular fa-hand-back-fist"></i></button>
-      <button class="circle-button" value='paper'><i class="fa-regular fa-hand"></i></button>
-      <button class="circle-button" value='scissors'><i class="fa-regular fa-hand-scissors"></i></button>
-      <button id="lizard" class="circle-button" value='lizard'><i class="fa-regular fa-hand-lizard"></i></button>
-      <button id="spock" class="circle-button" value='spock'><i class="fa-regular fa-hand-spock"></i></button>
+      <button class="circle-button" value='rock' aria-label="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button class="circle-button" value='paper' aria-label="paper"><i class="fa-regular fa-hand"></i></button>
+      <button class="circle-button" value='scissors' aria-label="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+      <button id="lizard" class="circle-button" value='lizard' aria-label="lizard"><i class="fa-regular fa-hand-lizard"></i></button>
+      <button id="spock" class="circle-button" value='spock' aria-label="spock"><i class="fa-regular fa-hand-spock"></i></button>
     </div>
     
     <!--Results Section-->
-    <div id="resultSection">
-      <div class="Names">Player:<span id="lifeDisplayPlayer">Player:</span></div>
-      <div class="Names">Computer:<span id="lifeDisplayPc">Player:</span></div>
+    <div id="result-section">
+      <div class="Names">Player:<span id="life-display-player">Player:</span></div>
+      <div class="Names">Computer:<span id="life-display-pc">Player:</span></div>
       <span id="result"></span>
       <br>
-      <span id="finalResult"></span>
+      <span id="final-result"></span>
       <!-- Extra Buttons on Game Screen-->
-      <div id="extraButtons">
-        <button class="rulesBtn rulesBtnGame" value="rules">RULES</button>
-        <button class="rtnBtn menuBtnGame" value="home">MENU</button>
+      <div id="extra-buttons">
+        <button class="rules-btn rules-btn-game" value="rules">RULES</button>
+        <button class="rtn-btn menu-btn-game" value="home">MENU</button>
       </div>
   </div>
     </div>
      
     <!--Game Over Modal-->
-   <div id="gameOverModal" class="gameOverModal">
-        <div class="gameOver-content">
+   <div id="game-over-modal" class="game-over-modal">
+        <div class="game-over-content">
             <h3>Game Over!</h3>
-            <span id="gameOverResult">result</span>
-            <p id="gOMessage">place holder text</p>
-            <button class="rtnBtn" value="home">MENU</button>
+            <span id="game-over-result">result</span>
+            <p id="game-over-message">place holder text</p>
+            <button class="rtn-btn" value="home">MENU</button>
         </div>
    </div>
     <!--Font Awesome-->
