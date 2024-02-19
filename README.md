@@ -173,6 +173,25 @@ The favicon is a small image that can be seen on the top left of the visitors ta
 
 
 Mention what a modal is?
+---A modal (also called a modal window or lightbox) is a web page element that displays in front of and deactivates all other page content. To return to the main content, the user must engage with the modal by completing an action or by closing it. Modals are often used to direct users’ attention to an important action or piece of information on a website or application.
+
+The purpose of modals can be summed up in one word: focus. If you need visitors to focus on something simple, a modal window is one of the most effective means to do so. Users must either close the modal, or complete a specific action within it (e.g., reading a message and clicking “OK”, filling out a form, etc.).
+
+Modals are polarizing among designers and users alike. Many find value in their ability to quickly bring attention to something essential, while others regard them as an unwelcome interruption to the user experience.
+
+In practice, it all depends on whether the modal is well-designed and purposeful. When done right, they can be a helpful technique for both your users and for your numbers: According to a recent study of nearly 2 billion modal popups, the top 10% best-performers converted at a remarkable rate of 9.28%.
+
+Benefits of Modals
+Aside from channeling focus, modals present additional benefits over other display elements.
+
+Simplicity
+Modals keep things simple. Everything stays within one tab, helping visitors stay connected with what they were doing before the modal appeared.
+
+Visibility
+Since modals appear within the user’s active tab, you can be sure it will be seen. If instead the prompt were to appear in a new window, the user could miss it or instinctively close the new window after being conditioned by annoying ad popups.
+
+Flexibility
+Modals also help preserve page space by displaying featured media, like images or videos, in a lightbox.---
 
 
 main menu
@@ -284,6 +303,7 @@ The live link can be found [here](https://tommyspecs.github.io/rock-paper-scisso
 - https://www.w3schools.com/css/css3_borders.asp
 - https://www.pgpedia.com/r/rock-paper-scissors#:~:text=The%20rock%20is%20a%20closed,and%20scissors%20wins%20against%20paper.
 - https://blog.hubspot.com/website/modal-web-design
+- https://jshint.com/docs/
 
 
 ### *Media*
