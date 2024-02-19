@@ -237,21 +237,27 @@ ul{
     transform: rotate(270deg) translate(120px) rotate(-270deg);
     background-color: #84ff9f; 
     border: 5px solid #383C80; 
-    justify-content: center;   
+    justify-content: center;
+    text-align:center;
+    align-items: center;   
 }   
 /*Paper*/
 .circle-button:nth-child(2) {
     transform: rotate(337.5deg) translate(120px) rotate(-337.5deg);
     background-color: #ff5994;    
     border: 5px solid #383C80; 
-    justify-content: center; 
+    justify-content: center;
+    text-align:center;
+    align-items: center;
 }
 /*Scissors*/
 .circle-button:nth-child(3) {
    transform: rotate(202.5deg) translate(120px) rotate(-202.5deg);
    background-color:#edff8f ; 
    border: 5px solid #383C80;
-   justify-content: center;   
+   justify-content: center;
+   text-align:center;
+   align-items: center; 
 }
 /*Lizard*/
 .circle-button:nth-child(4) {
@@ -259,13 +265,17 @@ ul{
     background-color:#82b6ff;    
     border: 5px solid #383C80;
     justify-content: center;
+    text-align:center;
+    align-items: center;
 }   
 /*Spock*/
 .circle-button:nth-child(5) {
     transform: rotate(35deg) translate(120px) rotate(-35deg);
     background-color: #ff9668;  
     border: 5px solid #383C80;
-    justify-content: center;        
+    justify-content: center;
+    text-align:center;
+    align-items: center;        
 }
 /*results section*/
 #result-section{
@@ -294,6 +304,7 @@ ul{
     font-weight: bold;
     background-color: #edff8f;
     text-align: center;
+    color:#000000;
 }
 
 .rules-btn-game{
@@ -301,6 +312,7 @@ ul{
     width: 100px;
     font-size:100%;
     text-align:center;
+    color:#000000;
 }
 .rules-btn-game:hover{
     border-radius: 75%;
