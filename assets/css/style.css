@@ -20,6 +20,7 @@ button{
     font-weight: Bold;
     text-decoration: underline;
     font-family: "Bebas Neue", sans-serif;
+    color:#000000;
     }
 
 h1 {
@@ -47,7 +48,8 @@ h2, h3 {
     margin: 10% auto;
     padding: 20px;
     border: 5px solid #ff9668;
-    width: 80%;            
+    width: 80%;
+    color:#000000;        
 }
 
 /*Menu Buttons*/
@@ -61,13 +63,15 @@ h2, h3 {
     font-size:100%;
     font-weight: bold;
     border: 5px solid #383C80;  
-    margin: 5px;    
+    margin: 5px; 
+    color:#000000;   
 }
 
 /*Individual Menu Buttons*/
 /*Easy Menu Button*/
 .easy{
     background-color: #84ff9f;
+    color:#000000;
 }
 .easy:hover{
 background-color: #CBFAD6;
@@ -77,6 +81,7 @@ background-color: #CBFAD6;
 /*Hard Menu Button*/
 .hard{ 
     background-color: #ff5994;
+    color:#000000;
 }
 .hard:hover {
     background-color: #F79ABA;
@@ -86,6 +91,7 @@ background-color: #CBFAD6;
 /*Rules Menu Button*/
 .rules-btn-menu{
     background-color: #edff8f;
+    color:#000000;
 }
 .rules-btn-menu:hover {
     background-color: #F0F8C9;
@@ -95,6 +101,7 @@ background-color: #CBFAD6;
 /*Lives Menu Button*/
 .lives-btn{
     background-color:#82b6ff;
+    color:#000000;
 }
 .lives-btn:hover {
     background-color: #AECDF9;
@@ -121,7 +128,8 @@ background-color: #CBFAD6;
     left:5px;
     border: 5px solid #ff9668;
     width:80%;
-    font-weight: bold;   
+    font-weight: bold;
+    color:#000000;  
 }
 /*Text Content for Rules*/
 ul{
@@ -160,16 +168,18 @@ ul{
     margin: 15% auto;
     padding: 20px;
     border: 5px solid #ff9668;
-    width: 80%;    
+    width: 80%;
+    color:#000000;    
 }
 /*Easy Lives Button*/
 .easy-lives{
     font-weight: bold;
     background-color:#84ff9f;
-      height: 50px;
+    height: 50px;
     width: 100px;
     font-size:100%;
     text-align:center;
+    color:#000000;
 }
 /*Hard Lives Button*/
 .hard-lives{
@@ -179,6 +189,7 @@ ul{
     width: 100px;
     font-size:100%;
     text-align:center;
+    color:#000000;
 }
 /* Menu Lives Button*/
 .rtn-btn{
@@ -187,7 +198,8 @@ ul{
     height: 50px;
     width: 100px;
     font-size:100%;
-    text-align:center;   
+    text-align:center;
+    color:#000000;   
 }
 .rtn-btn:hover{
     border-radius: 75%;
@@ -205,6 +217,7 @@ ul{
     text-align: center;
     margin: 0 auto;
     top: 50px;
+    color: #000000;
 }
 /*Player Choice Buttons*/
 .circle-button {
@@ -217,6 +230,7 @@ ul{
     height: 75px;
     width: 75px;
     border-radius: 50%;
+    color:#000000;
   }
 /*Rock*/
 .circle-button:nth-child(1) {
@@ -256,6 +270,7 @@ ul{
 /*results section*/
 #result-section{
     border: 5px solid #ff9668;
+    color:#000000;
     margin-top: 50px;
     font-size: 150%; 
   }
@@ -277,7 +292,8 @@ ul{
 /*rules button on game screen*/
 .rules-btn{
     font-weight: bold;
-    background-color: #edff8f
+    background-color: #edff8f;
+    text-align: center;
 }
 
 .rules-btn-game{
